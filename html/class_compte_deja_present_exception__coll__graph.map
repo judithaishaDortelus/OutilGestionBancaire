@@ -1,0 +1,5 @@
+<map id="CompteDejaPresentException" name="CompteDejaPresentException">
+<area shape="rect" id="node1" title="Classe pour la gestion d&#39;erreur lors de l&#39;ajout d&#39;un compte doublon." alt="" coords="5,155,221,181"/>
+<area shape="rect" id="node2" href="$class_compte_exception.html" title="Classe de base des exceptions du compte." alt="" coords="45,80,182,107"/>
+<area shape="rect" id="node3" title=" " alt="" coords="44,5,183,32"/>
+</map>

@@ -1,0 +1,8 @@
+<map id="Cheque.h" name="Cheque.h">
+<area shape="rect" id="node1" title="Fichier qui contient l&#39;interface de la classe Cheque qui sert au maintien et à la manipulation des co..." alt="" coords="159,5,241,32"/>
+<area shape="rect" id="node2" href="$_cheque_8cpp.html" title="Implémentation de la classe Cheque." alt="" coords="5,80,104,107"/>
+<area shape="rect" id="node3" href="$_client_8h.html" title="Fichier qui contient l&#39;interface de la classe Client qui sert à la gestion des comptes du client." alt="" coords="128,80,200,107"/>
+<area shape="rect" id="node5" href="$_client_testeur_8cpp.html" title="Test unitaire de la classe Client." alt="" coords="153,155,322,181"/>
+<area shape="rect" id="node6" href="$_cheque_testeur_8cpp.html" title="Test unitaire de la classe Cheque." alt="" coords="275,80,455,107"/>
+<area shape="rect" id="node4" href="$_client_8cpp.html" title="Implémentation de la classe Client." alt="" coords="42,155,129,181"/>
+</map>

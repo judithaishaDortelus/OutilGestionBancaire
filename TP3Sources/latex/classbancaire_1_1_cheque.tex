@@ -1,0 +1,232 @@
+\hypertarget{classbancaire_1_1_cheque}{}\doxysection{bancaire\+::Cheque Class Reference}
+\label{classbancaire_1_1_cheque}\index{bancaire::Cheque@{bancaire::Cheque}}
+
+
+Classe sert au maintien et à la manipulation des comptes cheque.  
+
+
+
+
+{\ttfamily \#include $<$Cheque.\+h$>$}
+
+
+
+Inheritance diagram for bancaire\+::Cheque\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=183pt]{classbancaire_1_1_cheque__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for bancaire\+::Cheque\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=183pt]{classbancaire_1_1_cheque__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classbancaire_1_1_cheque_a572ebcb08e07b3237a38f930cc480c74}{Cheque}} (unsigned p\+\_\+no\+Compte, double p\+\_\+solde, double p\+\_\+taux\+Interet, unsigned p\+\_\+nombre\+Transactions, double p\+\_\+taux\+Interet\+Minimum=0.\+1, const std\+::string \&p\+\_\+description=\char`\"{}Cheque\char`\"{})
+\begin{DoxyCompactList}\small\item\em constructeur avec paramètres On construit un objet \mbox{\hyperlink{classbancaire_1_1_cheque}{Cheque}} à partir de valeurs passées en paramètres. Les attributs sont assignés seulement si le compte cheque est considéré comme valide. Autrement, une erreur de précondition est générée. \end{DoxyCompactList}\item 
+unsigned \mbox{\hyperlink{classbancaire_1_1_cheque_aaea4865dde9da0c15eb8e0dd7caa9ea2}{req\+Nbr\+Transactions}} () const
+\begin{DoxyCompactList}\small\item\em méthode accesseur retournant le nombre de transactions \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classbancaire_1_1_cheque_a3ab074f0c56ed198f553740ae56999f0}{req\+Taux\+Interet\+Minimum}} () const
+\begin{DoxyCompactList}\small\item\em méthode accesseur retournant le taux d\textquotesingle{}intérêt minimum \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classbancaire_1_1_cheque_af492d91c66362cea7545c4212d946c19}{asg\+Nbr\+Transactions}} (unsigned p\+\_\+nombre\+Transactions)
+\begin{DoxyCompactList}\small\item\em Assigne le nombre de transactions à l\textquotesingle{}objet courant. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classbancaire_1_1_cheque_a12fb1f031635e31d5137ffd20f2236e5}\label{classbancaire_1_1_cheque_a12fb1f031635e31d5137ffd20f2236e5}} 
+virtual \mbox{\hyperlink{classbancaire_1_1_cheque_a12fb1f031635e31d5137ffd20f2236e5}{$\sim$\+Cheque}} ()
+\begin{DoxyCompactList}\small\item\em Destructeur virtuelle de la classe \mbox{\hyperlink{classbancaire_1_1_cheque}{Cheque}}. \end{DoxyCompactList}\item 
+virtual double \mbox{\hyperlink{classbancaire_1_1_cheque_a107d7a787feb704963dd6503396b0460}{calculer\+Interet}} () const
+\begin{DoxyCompactList}\small\item\em Méthode virtuelle calculant le taux d\textquotesingle{}intérêt du compte cheque. \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{classbancaire_1_1_cheque_a2a37aaf12798a59094b3386b16a39a23}{req\+Compte\+Formate}} () const
+\begin{DoxyCompactList}\small\item\em Méthode virtuelle retournant l\textquotesingle{}ensemble des attributs formatés. \end{DoxyCompactList}\item 
+virtual std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classbancaire_1_1_compte}{Compte}} $>$ \mbox{\hyperlink{classbancaire_1_1_cheque_a501a15226dfae29e8baeb7c4068e8e73}{clone}} () const override
+\begin{DoxyCompactList}\small\item\em Méthode virtuelle permettant de faire une copie sur le monceau de l\textquotesingle{}objet courant. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{classbancaire_1_1_cheque_ab177bc2b3dfc7178f8670b2db5485015}{valider\+Attributs\+Cheque}} (double p\+\_\+taux\+Interet\+Minimum, unsigned p\+\_\+nombre\+Transations)
+\begin{DoxyCompactList}\small\item\em Vérifie la validité des attributs. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classe sert au maintien et à la manipulation des comptes cheque. 
+
+\begin{DoxyVerb}         La classe maintient dans un état cohérent ces renseignements.
+         Elle valide ce qu'on veut lui assigner.
+         Cette classe est une classe dérivée de la classe Compte permettant 
+         à la classe Cheque de faire des traitements polymorphes basé sur la classe de base.
+         La classe n'accepte que des comptes valides, c'est la responsabilité
+         de l'utilisateur de la classe de s'en asssurer.             
+\end{DoxyVerb}
+ \begin{DoxyInvariant}{Invariant}
+La validité peut être vérifiée avec la méthode static bool valider\+Attributs\+Epargne(taux\+Interet\+Minimum, nombre\+Transations) 
+\end{DoxyInvariant}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classbancaire_1_1_cheque_a572ebcb08e07b3237a38f930cc480c74}\label{classbancaire_1_1_cheque_a572ebcb08e07b3237a38f930cc480c74}} 
+\index{bancaire::Cheque@{bancaire::Cheque}!Cheque@{Cheque}}
+\index{Cheque@{Cheque}!bancaire::Cheque@{bancaire::Cheque}}
+\doxysubsubsection{\texorpdfstring{Cheque()}{Cheque()}}
+{\footnotesize\ttfamily bancaire\+::\+Cheque\+::\+Cheque (\begin{DoxyParamCaption}\item[{unsigned}]{p\+\_\+no\+Compte,  }\item[{double}]{p\+\_\+solde,  }\item[{double}]{p\+\_\+taux\+Interet,  }\item[{unsigned}]{p\+\_\+nombre\+Transactions,  }\item[{double}]{p\+\_\+taux\+Interet\+Minimum = {\ttfamily 0.1},  }\item[{const std\+::string \&}]{p\+\_\+description = {\ttfamily \char`\"{}Cheque\char`\"{}} }\end{DoxyParamCaption})}
+
+
+
+constructeur avec paramètres On construit un objet \mbox{\hyperlink{classbancaire_1_1_cheque}{Cheque}} à partir de valeurs passées en paramètres. Les attributs sont assignés seulement si le compte cheque est considéré comme valide. Autrement, une erreur de précondition est générée. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em p\+\_\+no\+Compte} & est un entier positif qui représente le numéro du compte cheque \\
+\hline
+\mbox{\texttt{ in}}  & {\em p\+\_\+solde} & est un nombre décimale qui représente le solde du compte cheque \\
+\hline
+\mbox{\texttt{ in}}  & {\em p\+\_\+taux\+Interet} & est un nombre décimale qui représente le taux d\textquotesingle{}intérêt du compte cheque \\
+\hline
+\mbox{\texttt{ in}}  & {\em p\+\_\+nombre\+Transactions} & est un entier positif qui représente le nombre de transactions du compte cheque \\
+\hline
+\mbox{\texttt{ in}}  & {\em p\+\_\+taux\+Interet\+Minimum} & est un nombre décimale qui represésente le taux d\textquotesingle{}intérêt minimum du compte cheque. Par défaut 0.\+1 \\
+\hline
+\mbox{\texttt{ in}}  & {\em p\+\_\+description} & est une chaîne de caractères qui représente la description du compte. Description par défaut \char`\"{}\+Cheque\char`\"{} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+p\+\_\+taux\+Interet\+Minimum, p\+\_\+nombre\+Transactions doivent correspondre à un compte cheque valide 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+p\+\_\+taux\+Interet\+Minimum, p\+\_\+nombre\+Transactions sont valides et l\textquotesingle{}objet construit a été initialisé à partir des attributs passés en paramètres 
+\end{DoxyPostcond}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classbancaire_1_1_cheque_af492d91c66362cea7545c4212d946c19}\label{classbancaire_1_1_cheque_af492d91c66362cea7545c4212d946c19}} 
+\index{bancaire::Cheque@{bancaire::Cheque}!asgNbrTransactions@{asgNbrTransactions}}
+\index{asgNbrTransactions@{asgNbrTransactions}!bancaire::Cheque@{bancaire::Cheque}}
+\doxysubsubsection{\texorpdfstring{asgNbrTransactions()}{asgNbrTransactions()}}
+{\footnotesize\ttfamily void bancaire\+::\+Cheque\+::asg\+Nbr\+Transactions (\begin{DoxyParamCaption}\item[{unsigned}]{p\+\_\+nombre\+Transactions }\end{DoxyParamCaption})}
+
+
+
+Assigne le nombre de transactions à l\textquotesingle{}objet courant. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em p\+\_\+nombre\+Transactions} & est un entier positif qui représente le nombre de transactions du compte cheque \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+p\+\_\+nombre\+Transactions du compte cheque doit être $<$= 40 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+m\+\_\+nombre\+Transactions prend la valeur du paramètre reçu en entrée 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classbancaire_1_1_cheque_a107d7a787feb704963dd6503396b0460}\label{classbancaire_1_1_cheque_a107d7a787feb704963dd6503396b0460}} 
+\index{bancaire::Cheque@{bancaire::Cheque}!calculerInteret@{calculerInteret}}
+\index{calculerInteret@{calculerInteret}!bancaire::Cheque@{bancaire::Cheque}}
+\doxysubsubsection{\texorpdfstring{calculerInteret()}{calculerInteret()}}
+{\footnotesize\ttfamily double bancaire\+::\+Cheque\+::calculer\+Interet (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Méthode virtuelle calculant le taux d\textquotesingle{}intérêt du compte cheque. 
+
+\begin{DoxyReturn}{Returns}
+un nombre décimal 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classbancaire_1_1_compte_a3e321eb046547c19c814752b23d0e492}{bancaire\+::\+Compte}}.
+
+\mbox{\Hypertarget{classbancaire_1_1_cheque_a501a15226dfae29e8baeb7c4068e8e73}\label{classbancaire_1_1_cheque_a501a15226dfae29e8baeb7c4068e8e73}} 
+\index{bancaire::Cheque@{bancaire::Cheque}!clone@{clone}}
+\index{clone@{clone}!bancaire::Cheque@{bancaire::Cheque}}
+\doxysubsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classbancaire_1_1_compte}{Compte}} $>$ bancaire\+::\+Cheque\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Méthode virtuelle permettant de faire une copie sur le monceau de l\textquotesingle{}objet courant. 
+
+\begin{DoxyReturn}{Returns}
+l\textquotesingle{}adresse du clone de l\textquotesingle{}objet courant dans un pointeur 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classbancaire_1_1_compte}{bancaire\+::\+Compte}}.
+
+\mbox{\Hypertarget{classbancaire_1_1_cheque_a2a37aaf12798a59094b3386b16a39a23}\label{classbancaire_1_1_cheque_a2a37aaf12798a59094b3386b16a39a23}} 
+\index{bancaire::Cheque@{bancaire::Cheque}!reqCompteFormate@{reqCompteFormate}}
+\index{reqCompteFormate@{reqCompteFormate}!bancaire::Cheque@{bancaire::Cheque}}
+\doxysubsubsection{\texorpdfstring{reqCompteFormate()}{reqCompteFormate()}}
+{\footnotesize\ttfamily std\+::string bancaire\+::\+Cheque\+::req\+Compte\+Formate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Méthode virtuelle retournant l\textquotesingle{}ensemble des attributs formatés. 
+
+\begin{DoxyReturn}{Returns}
+les informations du compte cheque formatée dans une chaîne de caractères 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classbancaire_1_1_compte_ac28216fc5dcaf48c41a997b8865ade6a}{bancaire\+::\+Compte}}.
+
+\mbox{\Hypertarget{classbancaire_1_1_cheque_aaea4865dde9da0c15eb8e0dd7caa9ea2}\label{classbancaire_1_1_cheque_aaea4865dde9da0c15eb8e0dd7caa9ea2}} 
+\index{bancaire::Cheque@{bancaire::Cheque}!reqNbrTransactions@{reqNbrTransactions}}
+\index{reqNbrTransactions@{reqNbrTransactions}!bancaire::Cheque@{bancaire::Cheque}}
+\doxysubsubsection{\texorpdfstring{reqNbrTransactions()}{reqNbrTransactions()}}
+{\footnotesize\ttfamily unsigned bancaire\+::\+Cheque\+::req\+Nbr\+Transactions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+méthode accesseur retournant le nombre de transactions 
+
+\begin{DoxyReturn}{Returns}
+un entier positif qui représente le nombre de transactions 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classbancaire_1_1_cheque_a3ab074f0c56ed198f553740ae56999f0}\label{classbancaire_1_1_cheque_a3ab074f0c56ed198f553740ae56999f0}} 
+\index{bancaire::Cheque@{bancaire::Cheque}!reqTauxInteretMinimum@{reqTauxInteretMinimum}}
+\index{reqTauxInteretMinimum@{reqTauxInteretMinimum}!bancaire::Cheque@{bancaire::Cheque}}
+\doxysubsubsection{\texorpdfstring{reqTauxInteretMinimum()}{reqTauxInteretMinimum()}}
+{\footnotesize\ttfamily double bancaire\+::\+Cheque\+::req\+Taux\+Interet\+Minimum (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+méthode accesseur retournant le taux d\textquotesingle{}intérêt minimum 
+
+\begin{DoxyReturn}{Returns}
+un nombre décimale qui représente le taux d\textquotesingle{}intérêt minimum 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classbancaire_1_1_cheque_ab177bc2b3dfc7178f8670b2db5485015}\label{classbancaire_1_1_cheque_ab177bc2b3dfc7178f8670b2db5485015}} 
+\index{bancaire::Cheque@{bancaire::Cheque}!validerAttributsCheque@{validerAttributsCheque}}
+\index{validerAttributsCheque@{validerAttributsCheque}!bancaire::Cheque@{bancaire::Cheque}}
+\doxysubsubsection{\texorpdfstring{validerAttributsCheque()}{validerAttributsCheque()}}
+{\footnotesize\ttfamily bool bancaire\+::\+Cheque\+::valider\+Attributs\+Cheque (\begin{DoxyParamCaption}\item[{double}]{p\+\_\+taux\+Interet\+Minimum,  }\item[{unsigned}]{p\+\_\+nombre\+Transactions }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Vérifie la validité des attributs. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em p\+\_\+taux\+Interet\+Minimum} & est un nombre décimale qui represésente le taux d\textquotesingle{}intérêt minimum du compte cheque. Par défaut 0.\+1 \\
+\hline
+\mbox{\texttt{ in}}  & {\em p\+\_\+nombre\+Transactions} & est un entier positif qui représente le nombre de transactions du compte cheque \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un booléen indiquant si les attributs sont valides ou non 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_cheque_8h}{Cheque.\+h}}\item 
+\mbox{\hyperlink{_cheque_8cpp}{Cheque.\+cpp}}\end{DoxyCompactItemize}

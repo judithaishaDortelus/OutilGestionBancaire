@@ -1,0 +1,4 @@
+<map id="bancaire::Epargne" name="bancaire::Epargne">
+<area shape="rect" id="node1" title="Classe sert au maintien et à la manipulation des comptes epargne." alt="" coords="5,80,144,107"/>
+<area shape="rect" id="node2" href="$classbancaire_1_1_compte.html" title="Classe sert au maintien et à la manipulation des comptes." alt="" coords="6,5,143,32"/>
+</map>

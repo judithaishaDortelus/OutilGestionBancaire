@@ -1,0 +1,6 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classbancaire_1_1_compte.html" title="Classe sert au maintien et à la manipulation des comptes." alt="" coords="5,56,143,83"/>
+<area shape="rect" id="node2" href="$class_compte_test.html" title="Classe de test permettant de tester la classe abstraite Compte." alt="" coords="211,5,309,32"/>
+<area shape="rect" id="node3" href="$classbancaire_1_1_cheque.html" title="Classe sert au maintien et à la manipulation des comptes cheque." alt="" coords="193,56,327,83"/>
+<area shape="rect" id="node4" href="$classbancaire_1_1_epargne.html" title="Classe sert au maintien et à la manipulation des comptes epargne." alt="" coords="191,107,329,133"/>
+</map>

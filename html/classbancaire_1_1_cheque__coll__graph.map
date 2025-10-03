@@ -1,0 +1,4 @@
+<map id="bancaire::Cheque" name="bancaire::Cheque">
+<area shape="rect" id="node1" title="Classe sert au maintien et à la manipulation des comptes cheque." alt="" coords="7,80,141,107"/>
+<area shape="rect" id="node2" href="$classbancaire_1_1_compte.html" title="Classe sert au maintien et à la manipulation des comptes." alt="" coords="5,5,143,32"/>
+</map>

@@ -1,0 +1,82 @@
+\hypertarget{_epargne_testeur_8cpp}{}\doxysection{tests/\+Epargne\+Testeur.cpp File Reference}
+\label{_epargne_testeur_8cpp}\index{tests/EpargneTesteur.cpp@{tests/EpargneTesteur.cpp}}
+
+
+Test unitaire de la classe Epargne.  
+
+
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$gtest/gtest.\+h$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+{\ttfamily \#include \char`\"{}Date.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Compte.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Epargne.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Contrat\+Exception.\+h\char`\"{}}\newline
+Include dependency graph for Epargne\+Testeur.\+cpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_epargne_testeur_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_un_compte_epargne}{Un\+Compte\+Epargne}}
+\begin{DoxyCompactList}\small\item\em création d\textquotesingle{}une fixture pour des tests de la classe Epargne \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_epargne_testeur_8cpp_a2b756c39e5c4207e33515b59c994db4b}{TEST}} (\mbox{\hyperlink{classbancaire_1_1_epargne}{Epargne}}, constructeur\+Parametre\+Valide)
+\begin{DoxyCompactList}\small\item\em Test du constructeur avec paramètres Epargne(unsigned p\+\_\+no\+Compte, double p\+\_\+solde, double p\+\_\+taux\+Interet, const std\+::string\& p\+\_\+description = \char`\"{}\+Epargne\char`\"{}) cas valide\+: constructeur\+Parametre\+Valide \+: Création d\textquotesingle{}une compte cheque valide à l\textquotesingle{}aide du constructeur par paramètres. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_epargne_testeur_8cpp_a9902dd4a9e4f6a384e0e8aff6f5e1c98}\label{_epargne_testeur_8cpp_a9902dd4a9e4f6a384e0e8aff6f5e1c98}} 
+{\bfseries TEST} (\mbox{\hyperlink{classbancaire_1_1_epargne}{Epargne}}, constructeur\+Parametre\+\_\+solde\+Epargne\+Invalide)
+\item 
+\mbox{\Hypertarget{_epargne_testeur_8cpp_a0fb3bc6d9cb56fa9b642edae140927b7}\label{_epargne_testeur_8cpp_a0fb3bc6d9cb56fa9b642edae140927b7}} 
+{\bfseries TEST} (\mbox{\hyperlink{classbancaire_1_1_epargne}{Epargne}}, constructeur\+Parametre\+\_\+taux\+Interet\+Invalide)
+\item 
+\mbox{\Hypertarget{_epargne_testeur_8cpp_a941e22d1aac1a0664905b07bf81d636d}\label{_epargne_testeur_8cpp_a941e22d1aac1a0664905b07bf81d636d}} 
+\mbox{\hyperlink{_epargne_testeur_8cpp_a941e22d1aac1a0664905b07bf81d636d}{TEST}} (\mbox{\hyperlink{classbancaire_1_1_epargne}{Epargne}}, validation\+Attributs\+\_\+vrai)
+\begin{DoxyCompactList}\small\item\em Test de la méthode static bool valider\+Attributs\+Epargne(double p\+\_\+solde, double p\+\_\+taux\+Interet) cas valide\+: Attributs\+Vrai\+: vérifier les attributs d\textquotesingle{}un objet epargne valide solde\+Epargne\+Faux\+: vérifier un numéro de compte epargne invalide Taux\+Interet\+Faux\+: vérifier un taux d\textquotesingle{}intérêt invalide cas invalide\+: aucun d\textquotesingle{}identifié \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_epargne_testeur_8cpp_ab6686c4a4bf81726b2ec10be01dac2f3}\label{_epargne_testeur_8cpp_ab6686c4a4bf81726b2ec10be01dac2f3}} 
+{\bfseries TEST} (\mbox{\hyperlink{classbancaire_1_1_epargne}{Epargne}}, validation\+Solde\+Epargne\+\_\+faux)
+\item 
+\mbox{\Hypertarget{_epargne_testeur_8cpp_a018bba3c9cd01c65e6c152b36433d8a8}\label{_epargne_testeur_8cpp_a018bba3c9cd01c65e6c152b36433d8a8}} 
+{\bfseries TEST} (\mbox{\hyperlink{classbancaire_1_1_epargne}{Epargne}}, validation\+Taux\+Interet\+\_\+faux)
+\item 
+\mbox{\Hypertarget{_epargne_testeur_8cpp_a519ab0d5e72cc4b6c8a7bc39c512a66d}\label{_epargne_testeur_8cpp_a519ab0d5e72cc4b6c8a7bc39c512a66d}} 
+\mbox{\hyperlink{_epargne_testeur_8cpp_a519ab0d5e72cc4b6c8a7bc39c512a66d}{TEST\+\_\+F}} (\mbox{\hyperlink{class_un_compte_epargne}{Un\+Compte\+Epargne}}, calcul\+Interet\+Epargne)
+\begin{DoxyCompactList}\small\item\em Test de la méthode virtual double calculer\+Interet() const cas valide\+: calcul\+Interet\+Epargne\+: retourne le produit du solde par le taux d\textquotesingle{}intérêt cas invalide\+: aucun d\textquotesingle{}identifié \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_epargne_testeur_8cpp_aa18980800d87dfc225d53eff829a62bb}\label{_epargne_testeur_8cpp_aa18980800d87dfc225d53eff829a62bb}} 
+\mbox{\hyperlink{_epargne_testeur_8cpp_aa18980800d87dfc225d53eff829a62bb}{TEST\+\_\+F}} (\mbox{\hyperlink{class_un_compte_epargne}{Un\+Compte\+Epargne}}, req\+Epargne\+Formates)
+\begin{DoxyCompactList}\small\item\em Test de la méthode virtual std\+::string req\+Compte\+Formate() const cas valide\+: req\+Epargne\+Formates\+: test des informations formatés en string et objet epargne valide cas invalide\+: aucun d\textquotesingle{}identifié \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_epargne_testeur_8cpp_a35c57cbaea818646065d016991f9e85f}\label{_epargne_testeur_8cpp_a35c57cbaea818646065d016991f9e85f}} 
+\mbox{\hyperlink{_epargne_testeur_8cpp_a35c57cbaea818646065d016991f9e85f}{TEST\+\_\+F}} (\mbox{\hyperlink{class_un_compte_epargne}{Un\+Compte\+Epargne}}, clone\+Pointeur\+Epargne)
+\begin{DoxyCompactList}\small\item\em Test de la méthode virtual std\+::unique\+\_\+ptr$<$\+Compte$>$ clone() const override; cas valide\+: clone\+Pointeur\+Epargne\+: test du pointeur et de la méthode clone et objet epargne valide cas invalide\+: aucun d\textquotesingle{}identifié \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Test unitaire de la classe Epargne. 
+
+\begin{DoxyAuthor}{Author}
+Judith-\/\+Aisha Dortélus 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 \textbackslash{} 3/26/2025 A tester\+: Epargne(unsigned p\+\_\+no\+Compte, double p\+\_\+solde, double p\+\_\+taux\+Interet, const std\+::string\& p\+\_\+description = \char`\"{}\+Epargne\char`\"{}); virtual double calculer\+Interet() const; virtual std\+::unique\+\_\+ptr$<$\+Compte$>$ clone() const override; virtual std\+::string req\+Compte\+Formate() const; static bool valider\+Attributs\+Epargne(double p\+\_\+solde, double p\+\_\+taux\+Interet); 
+\end{DoxyVersion}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_epargne_testeur_8cpp_a2b756c39e5c4207e33515b59c994db4b}\label{_epargne_testeur_8cpp_a2b756c39e5c4207e33515b59c994db4b}} 
+\index{EpargneTesteur.cpp@{EpargneTesteur.cpp}!TEST@{TEST}}
+\index{TEST@{TEST}!EpargneTesteur.cpp@{EpargneTesteur.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}}
+{\footnotesize\ttfamily TEST (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classbancaire_1_1_epargne}{Epargne}}}]{,  }\item[{constructeur\+Parametre\+Valide}]{ }\end{DoxyParamCaption})}
+
+
+
+Test du constructeur avec paramètres Epargne(unsigned p\+\_\+no\+Compte, double p\+\_\+solde, double p\+\_\+taux\+Interet, const std\+::string\& p\+\_\+description = \char`\"{}\+Epargne\char`\"{}) cas valide\+: constructeur\+Parametre\+Valide \+: Création d\textquotesingle{}une compte cheque valide à l\textquotesingle{}aide du constructeur par paramètres. 
+
+cas invalides\+: solde\+Epargne\+Invalide\+: solde epargne $<$ 0 taux\+Interet\+Invalide \+: taux d\textquotesingle{}intérêt $<$ 0.\+1 $\vert$$\vert$ taux d\textquotesingle{}intérêt $>$ 3.\+5 

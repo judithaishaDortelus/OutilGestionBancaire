@@ -1,0 +1,6 @@
+<map id="validationFormat.h" name="validationFormat.h">
+<area shape="rect" id="node1" title="Fichier qui contient la déclaration des fonctions de validation." alt="" coords="128,5,273,32"/>
+<area shape="rect" id="node2" href="$_client_8cpp.html" title="Implémentation de la classe Client." alt="" coords="5,80,92,107"/>
+<area shape="rect" id="node3" href="$_client_testeur_8cpp.html" title="Test unitaire de la classe Client." alt="" coords="116,80,285,107"/>
+<area shape="rect" id="node4" href="$validation_format_8cpp.html" title="Implémentation des fonctions de validationFormat." alt="" coords="310,80,470,107"/>
+</map>

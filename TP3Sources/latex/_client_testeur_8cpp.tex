@@ -1,0 +1,158 @@
+\hypertarget{_client_testeur_8cpp}{}\doxysection{tests/\+Client\+Testeur.cpp File Reference}
+\label{_client_testeur_8cpp}\index{tests/ClientTesteur.cpp@{tests/ClientTesteur.cpp}}
+
+
+Test unitaire de la classe Client.  
+
+
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$gtest/gtest.\+h$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+{\ttfamily \#include \char`\"{}Date.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Compte.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Cheque.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Client.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}validation\+Format.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Contrat\+Exception.\+h\char`\"{}}\newline
+Include dependency graph for Client\+Testeur.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_client_testeur_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_un_client}{Un\+Client}}
+\begin{DoxyCompactList}\small\item\em création d\textquotesingle{}une fixture pour des tests de la classe Client \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_client_testeur_8cpp_a5583e90a7796f9ad772e6e7269e1daad}{TEST}} (\mbox{\hyperlink{classbancaire_1_1_client}{Client}}, constructeur\+Parametre\+Valide)
+\begin{DoxyCompactList}\small\item\em Test du constructeur avec paramètres Client(unsigned p\+\_\+no\+Folio, const std\+::string\& p\+\_\+nom, const std\+::string\& p\+\_\+prenom, const \mbox{\hyperlink{classutil_1_1_date}{util\+::\+Date}}\& p\+\_\+date\+Naissance, const std\+::string\& p\+\_\+telephone) cas valide\+: constructeur\+Parametre\+Valide \+: Création d\textquotesingle{}un objet Client valide à l\textquotesingle{}aide du constructeur par paramètres. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_client_testeur_8cpp_ae14b4e3bc27d269b1c957a644ddcab30}\label{_client_testeur_8cpp_ae14b4e3bc27d269b1c957a644ddcab30}} 
+{\bfseries TEST} (\mbox{\hyperlink{classbancaire_1_1_client}{Client}}, constructeur\+Parametre\+\_\+no\+Folio\+Invalide)
+\item 
+\mbox{\Hypertarget{_client_testeur_8cpp_ab3c5bc2c43801b73c5a39177770f3b92}\label{_client_testeur_8cpp_ab3c5bc2c43801b73c5a39177770f3b92}} 
+{\bfseries TEST} (\mbox{\hyperlink{classbancaire_1_1_client}{Client}}, constructeur\+Parametre\+\_\+telephone\+Invalide)
+\item 
+\mbox{\Hypertarget{_client_testeur_8cpp_a5244d0a4bcb974ccb241852f05dc3dde}\label{_client_testeur_8cpp_a5244d0a4bcb974ccb241852f05dc3dde}} 
+{\bfseries TEST} (\mbox{\hyperlink{classbancaire_1_1_client}{Client}}, constructeur\+Parametre\+\_\+annee\+Naissance\+Invalide)
+\item 
+\mbox{\hyperlink{_client_testeur_8cpp_a4b14d09bcbe67858958c04d849ff7202}{TEST}} (\mbox{\hyperlink{classbancaire_1_1_client}{Client}}, validation\+Attributs\+\_\+vrai)
+\begin{DoxyCompactList}\small\item\em Test de la méthode static bool valider\+Attributs\+Client(unsigned p\+\_\+no\+Folio, const std\+::string\& p\+\_\+nom, const std\+::string\& p\+\_\+prenom, const \mbox{\hyperlink{classutil_1_1_date}{util\+::\+Date}}\& p\+\_\+date\+Naissance, const std\+::string\& p\+\_\+telephone) cas valide\+: Attributs\+Vrai\+: vérifier les attributs d\textquotesingle{}un objet client valide no\+Folio\+Faux\+: vérifier le numéro de folio du client invalide annee\+Naissance\+Faux\+: vérifier l\textquotesingle{}année de naissance invalide telephone\+Faux \+: vérifier le numéro de téléphone invalide. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_client_testeur_8cpp_a20de6c45ebe0bd0f12acbe15ecd4b67b}\label{_client_testeur_8cpp_a20de6c45ebe0bd0f12acbe15ecd4b67b}} 
+{\bfseries TEST} (\mbox{\hyperlink{classbancaire_1_1_client}{Client}}, validation\+No\+Folio\+\_\+faux)
+\item 
+\mbox{\Hypertarget{_client_testeur_8cpp_a15920d6947ec737fb73eaaa40cd03fec}\label{_client_testeur_8cpp_a15920d6947ec737fb73eaaa40cd03fec}} 
+{\bfseries TEST} (\mbox{\hyperlink{classbancaire_1_1_client}{Client}}, validation\+Annee\+Naissance\+\_\+faux)
+\item 
+\mbox{\Hypertarget{_client_testeur_8cpp_ae2e73edbd19ecb5198fe92f5b23e3ed1}\label{_client_testeur_8cpp_ae2e73edbd19ecb5198fe92f5b23e3ed1}} 
+{\bfseries TEST} (\mbox{\hyperlink{classbancaire_1_1_client}{Client}}, validation\+Telephone\+Faux\+\_\+faux)
+\item 
+\mbox{\hyperlink{_client_testeur_8cpp_a1582ae11f21b89653d91918b8e8f4d9f}{TEST}} (\mbox{\hyperlink{classbancaire_1_1_client}{Client}}, constructeur\+Copie\+Valide)
+\begin{DoxyCompactList}\small\item\em Test du constructeur de copie Client(const Client\& p\+\_\+client) cas valide\+: constructeur\+Copie\+Valide \+: Création d\textquotesingle{}un objet Client valide à partir de l\textquotesingle{}objet passé en paramètre. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_client_testeur_8cpp_a5f3248f3ed8ec90caca1bd113a3ad7c5}{TEST}} (\mbox{\hyperlink{classbancaire_1_1_client}{Client}}, operateur\+Copie\+Valide)
+\begin{DoxyCompactList}\small\item\em Test de l\textquotesingle{}opérateur de copie Client\& operator=(const Client\& p\+\_\+client) cas valide\+: operateur\+Copie\+Valide \+: Création d\textquotesingle{}un objet Client valide à partir de l\textquotesingle{}objet passé en paramètre. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_client_testeur_8cpp_a224b6f0afbaa8c740d7a1ceb3378789a}\label{_client_testeur_8cpp_a224b6f0afbaa8c740d7a1ceb3378789a}} 
+{\bfseries TEST} (\mbox{\hyperlink{classbancaire_1_1_client}{Client}}, operateur\+Copie\+\_\+parametre\+Invalide)
+\item 
+\mbox{\Hypertarget{_client_testeur_8cpp_a840302f77306528ee9fc66d6e054afc4}\label{_client_testeur_8cpp_a840302f77306528ee9fc66d6e054afc4}} 
+\mbox{\hyperlink{_client_testeur_8cpp_a840302f77306528ee9fc66d6e054afc4}{TEST\+\_\+F}} (\mbox{\hyperlink{class_un_client}{Un\+Client}}, req\+No\+Folio)
+\begin{DoxyCompactList}\small\item\em Test de la méthode unsigned req\+No\+Folio() const cas valide\+: req\+No\+Folio\+: test du numéro de folio et objet client valide cas invalide\+: aucun d\textquotesingle{}identifié \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_client_testeur_8cpp_aec0c5ee6678a4a8a495a26b885d17185}\label{_client_testeur_8cpp_aec0c5ee6678a4a8a495a26b885d17185}} 
+\mbox{\hyperlink{_client_testeur_8cpp_aec0c5ee6678a4a8a495a26b885d17185}{TEST\+\_\+F}} (\mbox{\hyperlink{class_un_client}{Un\+Client}}, req\+Telephone)
+\begin{DoxyCompactList}\small\item\em Test de la méthode const std\+::string req\+Telephone() const cas valide\+: req\+Telephone\+: test du numéro de téléphone et objet client valide cas invalide\+: aucun d\textquotesingle{}identifié \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_client_testeur_8cpp_a5073008f9ae67ff2073239f959deabf0}\label{_client_testeur_8cpp_a5073008f9ae67ff2073239f959deabf0}} 
+\mbox{\hyperlink{_client_testeur_8cpp_a5073008f9ae67ff2073239f959deabf0}{TEST\+\_\+F}} (\mbox{\hyperlink{class_un_client}{Un\+Client}}, req\+Nom)
+\begin{DoxyCompactList}\small\item\em Test de la méthode const std\+::string req\+Nom() const cas valide\+: req\+Nom\+: test du nom et objet client valide cas invalide\+: aucun d\textquotesingle{}identifié \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_client_testeur_8cpp_a5c833c3a5d442e9dff735e43181deb12}\label{_client_testeur_8cpp_a5c833c3a5d442e9dff735e43181deb12}} 
+\mbox{\hyperlink{_client_testeur_8cpp_a5c833c3a5d442e9dff735e43181deb12}{TEST\+\_\+F}} (\mbox{\hyperlink{class_un_client}{Un\+Client}}, req\+Prenom)
+\begin{DoxyCompactList}\small\item\em Test de la méthode const std\+::string req\+Prenom() const cas valide\+: req\+Prenom\+: test du prénom et objet client valide cas invalide\+: aucun d\textquotesingle{}identifié \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_client_testeur_8cpp_a5808b7dd73e651c58dc591d7b24c856a}\label{_client_testeur_8cpp_a5808b7dd73e651c58dc591d7b24c856a}} 
+\mbox{\hyperlink{_client_testeur_8cpp_a5808b7dd73e651c58dc591d7b24c856a}{TEST\+\_\+F}} (\mbox{\hyperlink{class_un_client}{Un\+Client}}, req\+Date\+Naissance)
+\begin{DoxyCompactList}\small\item\em Test de la méthode const std\+::string req\+Date\+Naissance() const cas valide\+: req\+Date\+Naissance\+: test de la date de naissance et objet client valide cas invalide\+: aucun d\textquotesingle{}identifié \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_client_testeur_8cpp_afe53ed719ade811801dac003cea0b079}\label{_client_testeur_8cpp_afe53ed719ade811801dac003cea0b079}} 
+\mbox{\hyperlink{_client_testeur_8cpp_afe53ed719ade811801dac003cea0b079}{TEST\+\_\+F}} (\mbox{\hyperlink{class_un_client}{Un\+Client}}, req\+Telephone\+Formate)
+\begin{DoxyCompactList}\small\item\em Test de la méthode std\+::string req\+Telephone\+Formate() const cas valide\+: req\+Telephone\+Formate\+: test du numéro de téléphone formaté et objet client valide cas invalide\+: aucun d\textquotesingle{}identifié \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_client_testeur_8cpp_a9b1f723f254f32fd70ee4e1dde8c5678}\label{_client_testeur_8cpp_a9b1f723f254f32fd70ee4e1dde8c5678}} 
+\mbox{\hyperlink{_client_testeur_8cpp_a9b1f723f254f32fd70ee4e1dde8c5678}{TEST\+\_\+F}} (\mbox{\hyperlink{class_un_client}{Un\+Client}}, req\+Client\+Formate)
+\begin{DoxyCompactList}\small\item\em Test de la méthode std\+::string req\+Client\+Formate() const cas valide\+: req\+Client\+Formate\+: test des informations du client formaté et objet client valide cas invalide\+: aucun d\textquotesingle{}identifié \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_client_testeur_8cpp_af5d56b2b65dcdf0261841c0c08ae5721}\label{_client_testeur_8cpp_af5d56b2b65dcdf0261841c0c08ae5721}} 
+\mbox{\hyperlink{_client_testeur_8cpp_af5d56b2b65dcdf0261841c0c08ae5721}{TEST\+\_\+F}} (\mbox{\hyperlink{class_un_client}{Un\+Client}}, ajouter\+Compte)
+\begin{DoxyCompactList}\small\item\em Test de la méthode void ajouter\+Compte (const Compte\& p\+\_\+nouveau\+Compte) Cas valide\+: ajout\+Compte \+: ajout d\textquotesingle{}un compte au vecteur de comptes associé au client Cas invalide\+: aucun d\textquotesingle{}identifié \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_client_testeur_8cpp_ac48981c747fc4d906989f1db754f7a14}\label{_client_testeur_8cpp_ac48981c747fc4d906989f1db754f7a14}} 
+\mbox{\hyperlink{_client_testeur_8cpp_ac48981c747fc4d906989f1db754f7a14}{TEST\+\_\+F}} (\mbox{\hyperlink{class_un_client}{Un\+Client}}, nbr\+Comptes)
+\begin{DoxyCompactList}\small\item\em Test de la méthode size\+\_\+t req\+Nbr\+Comptes() const Cas valide\+: nbr\+Comptes \+: test du nombre de comptes que le client possède et objet valide Cas invalide\+: aucun d\textquotesingle{}identifié \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_client_testeur_8cpp_a41608f1eaf03ec2867126b0a6d8da851}\label{_client_testeur_8cpp_a41608f1eaf03ec2867126b0a6d8da851}} 
+\mbox{\hyperlink{_client_testeur_8cpp_a41608f1eaf03ec2867126b0a6d8da851}{TEST\+\_\+F}} (\mbox{\hyperlink{class_un_client}{Un\+Client}}, folio\+Plus\+Petit)
+\begin{DoxyCompactList}\small\item\em Test de la méthode bool operator$<$(const Client\& p\+\_\+no\+Folio) const cas valide\+: folio\+Plus\+Petit\+: test de l\textquotesingle{}opérateur de comparaison $<$ sur le numéro de folio de deux objets client valide cas invalide\+: aucun d\textquotesingle{}identifié \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_client_testeur_8cpp_a430d1aeb1d9a70331850e34233226cbc}\label{_client_testeur_8cpp_a430d1aeb1d9a70331850e34233226cbc}} 
+\mbox{\hyperlink{_client_testeur_8cpp_a430d1aeb1d9a70331850e34233226cbc}{TEST\+\_\+F}} (\mbox{\hyperlink{class_un_client}{Un\+Client}}, req\+Releves)
+\begin{DoxyCompactList}\small\item\em Test de la méthode std\+::string req\+Releves() const cas valide\+: req\+Releves\+: test des informations et comptes du client formaté et objet client valide cas invalide\+: aucun d\textquotesingle{}identifié \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Test unitaire de la classe Client. 
+
+\begin{DoxyAuthor}{Author}
+Judith-\/\+Aisha Dortélus 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 \textbackslash{} 4/3/2025 A tester\+: ~\newline
+ Client(unsigned p\+\_\+no\+Folio, const std\+::string\& p\+\_\+nom, const std\+::string\& p\+\_\+prenom, const \mbox{\hyperlink{classutil_1_1_date}{util\+::\+Date}}\& p\+\_\+date\+Naissance, const std\+::string\& p\+\_\+telephone); ~\newline
+ Client(const Client\& p\+\_\+client); ~\newline
+ Client\& operator=(const Client\& p\+\_\+client); ~\newline
+ unsigned req\+No\+Folio() const; const std\+::string req\+Telephone() const; ~\newline
+ const std\+::string req\+Nom() const; const std\+::string req\+Prenom() const; const std\+::string req\+Date\+Naissance() const; size\+\_\+t req\+Nbr\+Comptes() const; ~\newline
+ bool operator$<$(const Client\& p\+\_\+no\+Folio) const; void ajouter\+Compte (const Compte\& p\+\_\+nouveau\+Compte); ~\newline
+ std\+::string req\+Client\+Formate() const; std\+::string req\+Releves() const; static bool valider\+Attributs\+Client(unsigned p\+\_\+no\+Folio, const std\+::string\& p\+\_\+nom, const std\+::string\& p\+\_\+prenom, const \mbox{\hyperlink{classutil_1_1_date}{util\+::\+Date}}\& p\+\_\+date\+Naissance, const std\+::string\& p\+\_\+telephone); std\+::string req\+Telephone\+Formate() const; 
+\end{DoxyVersion}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_client_testeur_8cpp_a1582ae11f21b89653d91918b8e8f4d9f}\label{_client_testeur_8cpp_a1582ae11f21b89653d91918b8e8f4d9f}} 
+\index{ClientTesteur.cpp@{ClientTesteur.cpp}!TEST@{TEST}}
+\index{TEST@{TEST}!ClientTesteur.cpp@{ClientTesteur.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily TEST (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classbancaire_1_1_client}{Client}}}]{,  }\item[{constructeur\+Copie\+Valide}]{ }\end{DoxyParamCaption})}
+
+
+
+Test du constructeur de copie Client(const Client\& p\+\_\+client) cas valide\+: constructeur\+Copie\+Valide \+: Création d\textquotesingle{}un objet Client valide à partir de l\textquotesingle{}objet passé en paramètre. 
+
+cas invalides\+: aucun d\textquotesingle{}identifié \mbox{\Hypertarget{_client_testeur_8cpp_a5583e90a7796f9ad772e6e7269e1daad}\label{_client_testeur_8cpp_a5583e90a7796f9ad772e6e7269e1daad}} 
+\index{ClientTesteur.cpp@{ClientTesteur.cpp}!TEST@{TEST}}
+\index{TEST@{TEST}!ClientTesteur.cpp@{ClientTesteur.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily TEST (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classbancaire_1_1_client}{Client}}}]{,  }\item[{constructeur\+Parametre\+Valide}]{ }\end{DoxyParamCaption})}
+
+
+
+Test du constructeur avec paramètres Client(unsigned p\+\_\+no\+Folio, const std\+::string\& p\+\_\+nom, const std\+::string\& p\+\_\+prenom, const \mbox{\hyperlink{classutil_1_1_date}{util\+::\+Date}}\& p\+\_\+date\+Naissance, const std\+::string\& p\+\_\+telephone) cas valide\+: constructeur\+Parametre\+Valide \+: Création d\textquotesingle{}un objet Client valide à l\textquotesingle{}aide du constructeur par paramètres. 
+
+cas invalides\+: no\+Folio\+Invalide \+: numéro de folio $<$ 1000 $\vert$$\vert$ $>$= 10\textquotesingle{}000 telephone\+Invalide \+: numéro de téléphone du client contient une chaîne de caractère vide $\vert$$\vert$ $>$ 10 nombres $\vert$$\vert$ $<$ 10 nombres annee\+Naissance\+Invalide \+: année de naissance $<$ 1970 $\vert$$\vert$ $>$ 2037 \mbox{\Hypertarget{_client_testeur_8cpp_a5f3248f3ed8ec90caca1bd113a3ad7c5}\label{_client_testeur_8cpp_a5f3248f3ed8ec90caca1bd113a3ad7c5}} 
+\index{ClientTesteur.cpp@{ClientTesteur.cpp}!TEST@{TEST}}
+\index{TEST@{TEST}!ClientTesteur.cpp@{ClientTesteur.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily TEST (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classbancaire_1_1_client}{Client}}}]{,  }\item[{operateur\+Copie\+Valide}]{ }\end{DoxyParamCaption})}
+
+
+
+Test de l\textquotesingle{}opérateur de copie Client\& operator=(const Client\& p\+\_\+client) cas valide\+: operateur\+Copie\+Valide \+: Création d\textquotesingle{}un objet Client valide à partir de l\textquotesingle{}objet passé en paramètre. 
+
+cas invalides\+: parametre\+Invalide \+: l\textquotesingle{}objet client en paramètre est le même que l\textquotesingle{}objet courant \mbox{\Hypertarget{_client_testeur_8cpp_a4b14d09bcbe67858958c04d849ff7202}\label{_client_testeur_8cpp_a4b14d09bcbe67858958c04d849ff7202}} 
+\index{ClientTesteur.cpp@{ClientTesteur.cpp}!TEST@{TEST}}
+\index{TEST@{TEST}!ClientTesteur.cpp@{ClientTesteur.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily TEST (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classbancaire_1_1_client}{Client}}}]{,  }\item[{validation\+Attributs\+\_\+vrai}]{ }\end{DoxyParamCaption})}
+
+
+
+Test de la méthode static bool valider\+Attributs\+Client(unsigned p\+\_\+no\+Folio, const std\+::string\& p\+\_\+nom, const std\+::string\& p\+\_\+prenom, const \mbox{\hyperlink{classutil_1_1_date}{util\+::\+Date}}\& p\+\_\+date\+Naissance, const std\+::string\& p\+\_\+telephone) cas valide\+: Attributs\+Vrai\+: vérifier les attributs d\textquotesingle{}un objet client valide no\+Folio\+Faux\+: vérifier le numéro de folio du client invalide annee\+Naissance\+Faux\+: vérifier l\textquotesingle{}année de naissance invalide telephone\+Faux \+: vérifier le numéro de téléphone invalide. 
+
+cas invalide\+: aucun d\textquotesingle{}identifié 

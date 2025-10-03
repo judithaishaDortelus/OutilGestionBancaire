@@ -1,0 +1,13 @@
+<map id="TP3Sources/Cheque.h" name="TP3Sources/Cheque.h">
+<area shape="rect" id="node1" title="Fichier qui contient l&#39;interface de la classe Cheque qui sert au maintien et à la manipulation des co..." alt="" coords="645,5,808,32"/>
+<area shape="rect" id="node2" href="$_gestion_compte_g_u_i_8cpp.html" title="Implémentation de la classe GestionCompteGUI." alt="" coords="5,244,229,271"/>
+<area shape="rect" id="node3" href="$_utilisation_8cpp.html" title="Programme minimaliste utilisant la classe Client avec différents comptes." alt="" coords="72,162,272,189"/>
+<area shape="rect" id="node4" href="$_utilisation_t_p3_8cpp.html" title="Programme minimaliste utilisant la classe Client avec différents comptes." alt="" coords="721,155,895,196"/>
+<area shape="rect" id="node5" href="$_cheque_8cpp.html" title="Implémentation de la classe Cheque." alt="" coords="815,80,993,107"/>
+<area shape="rect" id="node6" href="$_client_8h.html" title="Fichier qui contient l&#39;interface de la classe Client qui sert à la gestion des comptes du client." alt="" coords="538,80,689,107"/>
+<area shape="rect" id="node10" href="$_client_testeur_8cpp.html" title="Test unitaire de la classe Client." alt="" coords="919,162,1167,189"/>
+<area shape="rect" id="node11" href="$_cheque_testeur_8cpp.html" title="Test unitaire de la classe Cheque." alt="" coords="1017,80,1276,107"/>
+<area shape="rect" id="node7" href="$_gestion_compte_g_u_i_8h.html" title="GUI d&#39;un programme minimaliste pour la gestion de compte du client." alt="" coords="297,162,506,189"/>
+<area shape="rect" id="node9" href="$_client_8cpp.html" title="Implémentation de la classe Client." alt="" coords="530,162,697,189"/>
+<area shape="rect" id="node8" href="$main_8cpp.html" title="Programme minimaliste utilisant la classe Client avec différents comptes pour intégré au framework QT..." alt="" coords="335,244,467,271"/>
+</map>

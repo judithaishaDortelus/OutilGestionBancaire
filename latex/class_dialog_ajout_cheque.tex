@@ -1,0 +1,167 @@
+\hypertarget{class_dialog_ajout_cheque}{}\doxysection{Dialog\+Ajout\+Cheque Class Reference}
+\label{class_dialog_ajout_cheque}\index{DialogAjoutCheque@{DialogAjoutCheque}}
+
+
+Classe GUI servant à la création d\textquotesingle{}un compte Cheque.  
+
+
+
+
+{\ttfamily \#include $<$Dialog\+Ajout\+Cheque.\+h$>$}
+
+
+
+Inheritance diagram for Dialog\+Ajout\+Cheque\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=190pt]{class_dialog_ajout_cheque__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Dialog\+Ajout\+Cheque\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=190pt]{class_dialog_ajout_cheque__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_dialog_ajout_cheque_ae74e14fb297bdc91aa5e7d36ef5086e9}{Dialog\+Ajout\+Cheque}} ()
+\begin{DoxyCompactList}\small\item\em constructeur par défaut On construit un objet \mbox{\hyperlink{class_dialog_ajout_cheque}{Dialog\+Ajout\+Cheque}} en utilisant le framework\+QT. C\textquotesingle{}est la fenêtre d\textquotesingle{}ajout d\textquotesingle{}un compte Cheque du GUI. ~\newline
+ \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_dialog_ajout_cheque_af533d594fb35e84d5f52ec13ed6b19d9}\label{class_dialog_ajout_cheque_af533d594fb35e84d5f52ec13ed6b19d9}} 
+virtual \mbox{\hyperlink{class_dialog_ajout_cheque_af533d594fb35e84d5f52ec13ed6b19d9}{$\sim$\+Dialog\+Ajout\+Cheque}} ()
+\begin{DoxyCompactList}\small\item\em Destructeur de la classe \mbox{\hyperlink{class_dialog_ajout_cheque}{Dialog\+Ajout\+Cheque}}. \end{DoxyCompactList}\item 
+unsigned \mbox{\hyperlink{class_dialog_ajout_cheque_a9e48f80a97e78ac788447ab1ea689f36}{req\+No\+Compte}} () const
+\begin{DoxyCompactList}\small\item\em méthode accesseur retournant le numéro de compte entrée \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_dialog_ajout_cheque_af382fb39b101d928bcc91c54b981816e}{req\+Taux\+Interet}} () const
+\begin{DoxyCompactList}\small\item\em méthode accesseur retournant le taux d\textquotesingle{}intérêt entrée \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_dialog_ajout_cheque_a0a6def82ea9166c9fe5e21aa550c50ac}{req\+Solde}} () const
+\begin{DoxyCompactList}\small\item\em méthode accesseur retournant le solde entrée \end{DoxyCompactList}\item 
+QString \mbox{\hyperlink{class_dialog_ajout_cheque_aafee8f1c36c29be70039a1a8dce6da3c}{req\+Description}} () const
+\begin{DoxyCompactList}\small\item\em méthode accesseur retournant la description du compte entrée ou \textquotesingle{}Cheque\textquotesingle{} par défaut \end{DoxyCompactList}\item 
+unsigned \mbox{\hyperlink{class_dialog_ajout_cheque_a6205757dacc3783d508a8ec8ea41a729}{req\+Nb\+Transactions}} () const
+\begin{DoxyCompactList}\small\item\em méthode accesseur retournant le nombre de transaction \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_dialog_ajout_cheque_a936647eb99c950bcfd8be9ca46af787e}{req\+Taux\+Interet\+Minimum}} () const
+\begin{DoxyCompactList}\small\item\em méthode accesseur retournant le taux d\textquotesingle{}intérêt minimum entrée \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classe GUI servant à la création d\textquotesingle{}un compte Cheque. 
+
+\begin{DoxyVerb}         La classe maintient dans un état cohérent ces renseignements et
+         est construit en utilisant le framework Qt.           
+         Cette classe contient l'interface pour l'ajout d'un compte Cheque.
+         La classe n'accepte qu'un compte Cheque valide.
+         C'est la responsabilité de l'utilisateur de la classe de s'en asssurer.  
+\end{DoxyVerb}
+ \textbackslash{}slot\+Ajout\+Epargne Slot de l\textquotesingle{}interface pour l\textquotesingle{}ajout d\textquotesingle{}un compte Cheque 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_dialog_ajout_cheque_ae74e14fb297bdc91aa5e7d36ef5086e9}\label{class_dialog_ajout_cheque_ae74e14fb297bdc91aa5e7d36ef5086e9}} 
+\index{DialogAjoutCheque@{DialogAjoutCheque}!DialogAjoutCheque@{DialogAjoutCheque}}
+\index{DialogAjoutCheque@{DialogAjoutCheque}!DialogAjoutCheque@{DialogAjoutCheque}}
+\doxysubsubsection{\texorpdfstring{DialogAjoutCheque()}{DialogAjoutCheque()}}
+{\footnotesize\ttfamily Dialog\+Ajout\+Cheque\+::\+Dialog\+Ajout\+Cheque (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+constructeur par défaut On construit un objet \mbox{\hyperlink{class_dialog_ajout_cheque}{Dialog\+Ajout\+Cheque}} en utilisant le framework\+QT. C\textquotesingle{}est la fenêtre d\textquotesingle{}ajout d\textquotesingle{}un compte Cheque du GUI. ~\newline
+ 
+
+\begin{DoxyPostcond}{Postcondition}
+L\textquotesingle{}objet construit a été initialisé et les informations du client peuvent être entrée. 
+\end{DoxyPostcond}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_dialog_ajout_cheque_aafee8f1c36c29be70039a1a8dce6da3c}\label{class_dialog_ajout_cheque_aafee8f1c36c29be70039a1a8dce6da3c}} 
+\index{DialogAjoutCheque@{DialogAjoutCheque}!reqDescription@{reqDescription}}
+\index{reqDescription@{reqDescription}!DialogAjoutCheque@{DialogAjoutCheque}}
+\doxysubsubsection{\texorpdfstring{reqDescription()}{reqDescription()}}
+{\footnotesize\ttfamily QString Dialog\+Ajout\+Cheque\+::req\+Description (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+méthode accesseur retournant la description du compte entrée ou \textquotesingle{}Cheque\textquotesingle{} par défaut 
+
+\begin{DoxyReturn}{Returns}
+une chaîne de caractère représentant la description du compte 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_dialog_ajout_cheque_a6205757dacc3783d508a8ec8ea41a729}\label{class_dialog_ajout_cheque_a6205757dacc3783d508a8ec8ea41a729}} 
+\index{DialogAjoutCheque@{DialogAjoutCheque}!reqNbTransactions@{reqNbTransactions}}
+\index{reqNbTransactions@{reqNbTransactions}!DialogAjoutCheque@{DialogAjoutCheque}}
+\doxysubsubsection{\texorpdfstring{reqNbTransactions()}{reqNbTransactions()}}
+{\footnotesize\ttfamily unsigned Dialog\+Ajout\+Cheque\+::req\+Nb\+Transactions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+méthode accesseur retournant le nombre de transaction 
+
+\begin{DoxyReturn}{Returns}
+un entier positif représentant le nombre de transactions du compte 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_dialog_ajout_cheque_a9e48f80a97e78ac788447ab1ea689f36}\label{class_dialog_ajout_cheque_a9e48f80a97e78ac788447ab1ea689f36}} 
+\index{DialogAjoutCheque@{DialogAjoutCheque}!reqNoCompte@{reqNoCompte}}
+\index{reqNoCompte@{reqNoCompte}!DialogAjoutCheque@{DialogAjoutCheque}}
+\doxysubsubsection{\texorpdfstring{reqNoCompte()}{reqNoCompte()}}
+{\footnotesize\ttfamily unsigned Dialog\+Ajout\+Cheque\+::req\+No\+Compte (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+méthode accesseur retournant le numéro de compte entrée 
+
+\begin{DoxyReturn}{Returns}
+un entier positif représentant le numéro de compte 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_dialog_ajout_cheque_a0a6def82ea9166c9fe5e21aa550c50ac}\label{class_dialog_ajout_cheque_a0a6def82ea9166c9fe5e21aa550c50ac}} 
+\index{DialogAjoutCheque@{DialogAjoutCheque}!reqSolde@{reqSolde}}
+\index{reqSolde@{reqSolde}!DialogAjoutCheque@{DialogAjoutCheque}}
+\doxysubsubsection{\texorpdfstring{reqSolde()}{reqSolde()}}
+{\footnotesize\ttfamily double Dialog\+Ajout\+Cheque\+::req\+Solde (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+méthode accesseur retournant le solde entrée 
+
+\begin{DoxyReturn}{Returns}
+un nombre décimal représentant le solde 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_dialog_ajout_cheque_af382fb39b101d928bcc91c54b981816e}\label{class_dialog_ajout_cheque_af382fb39b101d928bcc91c54b981816e}} 
+\index{DialogAjoutCheque@{DialogAjoutCheque}!reqTauxInteret@{reqTauxInteret}}
+\index{reqTauxInteret@{reqTauxInteret}!DialogAjoutCheque@{DialogAjoutCheque}}
+\doxysubsubsection{\texorpdfstring{reqTauxInteret()}{reqTauxInteret()}}
+{\footnotesize\ttfamily double Dialog\+Ajout\+Cheque\+::req\+Taux\+Interet (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+méthode accesseur retournant le taux d\textquotesingle{}intérêt entrée 
+
+\begin{DoxyReturn}{Returns}
+un nombre décimal représentant le taux d\textquotesingle{}intérêt 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_dialog_ajout_cheque_a936647eb99c950bcfd8be9ca46af787e}\label{class_dialog_ajout_cheque_a936647eb99c950bcfd8be9ca46af787e}} 
+\index{DialogAjoutCheque@{DialogAjoutCheque}!reqTauxInteretMinimum@{reqTauxInteretMinimum}}
+\index{reqTauxInteretMinimum@{reqTauxInteretMinimum}!DialogAjoutCheque@{DialogAjoutCheque}}
+\doxysubsubsection{\texorpdfstring{reqTauxInteretMinimum()}{reqTauxInteretMinimum()}}
+{\footnotesize\ttfamily double Dialog\+Ajout\+Cheque\+::req\+Taux\+Interet\+Minimum (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+méthode accesseur retournant le taux d\textquotesingle{}intérêt minimum entrée 
+
+\begin{DoxyReturn}{Returns}
+un nombre décimal représentant le taux d\textquotesingle{}intérêt minimum du compte 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+TP3\+Gui/\mbox{\hyperlink{_dialog_ajout_cheque_8h}{Dialog\+Ajout\+Cheque.\+h}}\item 
+TP3\+Gui/\mbox{\hyperlink{_dialog_ajout_cheque_8cpp}{Dialog\+Ajout\+Cheque.\+cpp}}\end{DoxyCompactItemize}

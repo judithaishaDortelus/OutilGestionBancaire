@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="100">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+      <itemPath>DialogAjoutCheque.h</itemPath>
+      <itemPath>DialogAjoutEpargne.h</itemPath>
+      <itemPath>DialogSupprimer.h</itemPath>
+      <itemPath>GestionCompteGUI.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles"
+                   displayName="Resource Files"
+                   projectFiles="true">
+      <itemPath>DialogAjoutCheque.ui</itemPath>
+      <itemPath>DialogAjoutEpargne.ui</itemPath>
+      <itemPath>DialogSupprimer.ui</itemPath>
+      <itemPath>GestionCompteGUI.ui</itemPath>
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <itemPath>DialogAjoutCheque.cpp</itemPath>
+      <itemPath>DialogAjoutEpargne.cpp</itemPath>
+      <itemPath>DialogSupprimer.cpp</itemPath>
+      <itemPath>GestionCompteGUI.cpp</itemPath>
+      <itemPath>main.cpp</itemPath>
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Test Files"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="4">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <qt>
+        <modules>core gui widgets</modules>
+      </qt>
+      <compileType>
+        <ccTool>
+          <incDir>
+            <pElem>../TP3Sources</pElem>
+          </incDir>
+        </ccTool>
+        <linkerTool>
+          <linkerLibItems>
+            <linkerLibProjectItem>
+              <makeArtifact PL="../TP3Sources"
+                            CT="3"
+                            CN="Debug"
+                            AC="true"
+                            BL="true"
+                            WD="../TP3Sources"
+                            BC="${MAKE}  -f Makefile CONF=Debug"
+                            CC="${MAKE}  -f Makefile CONF=Debug clean"
+                            OP="${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/libtp3sources.a">
+              </makeArtifact>
+            </linkerLibProjectItem>
+          </linkerLibItems>
+        </linkerTool>
+      </compileType>
+      <item path="DialogAjoutCheque.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="DialogAjoutCheque.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="DialogAjoutCheque.ui" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="DialogAjoutEpargne.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="DialogAjoutEpargne.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="DialogAjoutEpargne.ui" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="DialogSupprimer.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="DialogSupprimer.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="DialogSupprimer.ui" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="GestionCompteGUI.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="GestionCompteGUI.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="GestionCompteGUI.ui" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+    </conf>
+    <conf name="Release" type="4">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <qt>
+        <buildMode>1</buildMode>
+        <modules>core gui widgets</modules>
+      </qt>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <asmTool>
+          <developmentMode>5</developmentMode>
+        </asmTool>
+      </compileType>
+      <item path="DialogAjoutCheque.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="DialogAjoutCheque.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="DialogAjoutCheque.ui" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="DialogAjoutEpargne.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="DialogAjoutEpargne.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="DialogAjoutEpargne.ui" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="DialogSupprimer.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="DialogSupprimer.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="DialogSupprimer.ui" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="GestionCompteGUI.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="GestionCompteGUI.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="GestionCompteGUI.ui" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>

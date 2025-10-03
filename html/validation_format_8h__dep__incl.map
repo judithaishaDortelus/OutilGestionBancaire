@@ -1,0 +1,8 @@
+<map id="TP3Sources/validationFormat.h" name="TP3Sources/validationFormat.h">
+<area shape="rect" id="node1" title="Fichier qui contient la déclaration des fonctions de validation." alt="" coords="399,5,623,32"/>
+<area shape="rect" id="node2" href="$_utilisation_8cpp.html" title="Programme minimaliste utilisant la classe Client avec différents comptes." alt="" coords="5,87,205,114"/>
+<area shape="rect" id="node3" href="$_utilisation_t_p3_8cpp.html" title="Programme minimaliste utilisant la classe Client avec différents comptes." alt="" coords="229,80,403,121"/>
+<area shape="rect" id="node4" href="$_client_8cpp.html" title="Implémentation de la classe Client." alt="" coords="427,87,594,114"/>
+<area shape="rect" id="node5" href="$_client_testeur_8cpp.html" title="Test unitaire de la classe Client." alt="" coords="619,87,867,114"/>
+<area shape="rect" id="node6" href="$validation_format_8cpp.html" title="Implémentation des fonctions de validationFormat." alt="" coords="891,87,1130,114"/>
+</map>

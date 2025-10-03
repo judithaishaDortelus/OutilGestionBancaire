@@ -1,0 +1,172 @@
+\hypertarget{class_epargne}{}\doxysection{Epargne Class Reference}
+\label{class_epargne}\index{Epargne@{Epargne}}
+
+
+Classe sert au maintien et à la manipulation des comptes.  
+
+
+
+
+{\ttfamily \#include $<$Epargne.\+h$>$}
+
+
+
+Inheritance diagram for Epargne\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=136pt]{class_epargne__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Epargne\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=136pt]{class_epargne__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_epargne_a78ceec52deddddfe9d40399fa1bb76c8}{Epargne}} (unsigned p\+\_\+no\+Compte, double p\+\_\+solde, double p\+\_\+taux\+Interet, const std\+::string \&p\+\_\+description=\char`\"{}Epargne\char`\"{})
+\begin{DoxyCompactList}\small\item\em constructeur avec paramètres On construit un objet \mbox{\hyperlink{class_epargne}{Epargne}} à partir de valeurs passées en paramètres. Les attributs sont assignés seulement si le compte epargne est considéré comme valide. Autrement, une erreur de précondition est générée. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_epargne_ab834f77ef22c902c6ad27c6ffc50d647}\label{class_epargne_ab834f77ef22c902c6ad27c6ffc50d647}} 
+virtual \mbox{\hyperlink{class_epargne_ab834f77ef22c902c6ad27c6ffc50d647}{$\sim$\+Epargne}} ()
+\begin{DoxyCompactList}\small\item\em Destructeur virtuelle de la classe \mbox{\hyperlink{class_compte}{Compte}}. \end{DoxyCompactList}\item 
+virtual double \mbox{\hyperlink{class_epargne_a7f25db9fff8ca129e27d20ee3bb91ea0}{calculer\+Interet}} () const
+\begin{DoxyCompactList}\small\item\em Méthode virtuelle calculant le taux d\textquotesingle{}intérêt du compte epargne. \end{DoxyCompactList}\item 
+virtual std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_compte}{Compte}} $>$ \mbox{\hyperlink{class_epargne_a977271673f8c69c360c7ecdef06fb4ed}{clone}} () const override
+\begin{DoxyCompactList}\small\item\em Méthode virtuelle permettant de faire une copie sur le monceau de l\textquotesingle{}objet courant. \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{class_epargne_a5de7426af931b9dcb99ae14558bbdda9}{req\+Compte\+Formate}} () const
+\begin{DoxyCompactList}\small\item\em Méthode virtuelle retournant l\textquotesingle{}ensemble des attributs formatés. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{class_epargne_a20a3ad800bc51521f7b7a639226240af}{valider\+Attributs\+Epargne}} (double p\+\_\+solde, double p\+\_\+taux\+Interet)
+\begin{DoxyCompactList}\small\item\em Vérifie la validité des attributs. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classe sert au maintien et à la manipulation des comptes. 
+
+\begin{DoxyVerb}         La classe maintient dans un état cohérent ces renseignements.
+         Elle valide ce qu'on veut lui assigner.
+         Cette classe est une classe dérivée de la classe Compte permettant 
+         à la classe Epargne de faire des traitements polymorphes basé sur la classe de base.
+         La classe n'accepte que des comptes epargne valides, c'est la responsabilité
+         de l'utilisateur de la classe de s'en asssurer.             
+\end{DoxyVerb}
+ \begin{DoxyInvariant}{Invariant}
+La validité peut être vérifiée avec la méthode static bool valider\+Attributs\+Epargne(solde, taux\+Interet) 
+\end{DoxyInvariant}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_epargne_a78ceec52deddddfe9d40399fa1bb76c8}\label{class_epargne_a78ceec52deddddfe9d40399fa1bb76c8}} 
+\index{Epargne@{Epargne}!Epargne@{Epargne}}
+\index{Epargne@{Epargne}!Epargne@{Epargne}}
+\doxysubsubsection{\texorpdfstring{Epargne()}{Epargne()}}
+{\footnotesize\ttfamily Epargne\+::\+Epargne (\begin{DoxyParamCaption}\item[{unsigned}]{p\+\_\+no\+Compte,  }\item[{double}]{p\+\_\+solde,  }\item[{double}]{p\+\_\+taux\+Interet,  }\item[{const std\+::string \&}]{p\+\_\+description = {\ttfamily \char`\"{}Epargne\char`\"{}} }\end{DoxyParamCaption})}
+
+
+
+constructeur avec paramètres On construit un objet \mbox{\hyperlink{class_epargne}{Epargne}} à partir de valeurs passées en paramètres. Les attributs sont assignés seulement si le compte epargne est considéré comme valide. Autrement, une erreur de précondition est générée. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em p\+\_\+no\+Compte} & est un entier positif qui représente le numéro du compte epargne \\
+\hline
+\mbox{\texttt{ in}}  & {\em p\+\_\+solde} & est un nombre décimale qui représente le solde du compte epargne \\
+\hline
+\mbox{\texttt{ in}}  & {\em p\+\_\+date\+Ouverture} & héritié de la classe date, reçoit trois entiers en paramètre représentant la date d\textquotesingle{}ouverture du compte epargne \\
+\hline
+\mbox{\texttt{ in}}  & {\em p\+\_\+taux\+Interet} & est un nombre décimale qui représente le taux d\textquotesingle{}intérêt du compte epargne \\
+\hline
+\mbox{\texttt{ in}}  & {\em p\+\_\+description} & est une chaîne de caractères qui représente la description du compte. Description par défaut \char`\"{}\+Epargne\char`\"{} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+p\+\_\+solde, p\+\_\+taux\+Interet doivent correspondre à un compte epargne valide 
+\end{DoxyPrecond}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_epargne_a7f25db9fff8ca129e27d20ee3bb91ea0}\label{class_epargne_a7f25db9fff8ca129e27d20ee3bb91ea0}} 
+\index{Epargne@{Epargne}!calculerInteret@{calculerInteret}}
+\index{calculerInteret@{calculerInteret}!Epargne@{Epargne}}
+\doxysubsubsection{\texorpdfstring{calculerInteret()}{calculerInteret()}}
+{\footnotesize\ttfamily double Epargne\+::calculer\+Interet (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Méthode virtuelle calculant le taux d\textquotesingle{}intérêt du compte epargne. 
+
+\begin{DoxyReturn}{Returns}
+un nombre étant le produit du taux d\textquotesingle{}intérêt et du solde 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_compte_a1b2a90ab52ab6fb9cbf4f69a6f13020b}{Compte}}.
+
+\mbox{\Hypertarget{class_epargne_a977271673f8c69c360c7ecdef06fb4ed}\label{class_epargne_a977271673f8c69c360c7ecdef06fb4ed}} 
+\index{Epargne@{Epargne}!clone@{clone}}
+\index{clone@{clone}!Epargne@{Epargne}}
+\doxysubsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_compte}{Compte}} $>$ Epargne\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Méthode virtuelle permettant de faire une copie sur le monceau de l\textquotesingle{}objet courant. 
+
+\begin{DoxyReturn}{Returns}
+l\textquotesingle{}adresse du clone de l\textquotesingle{}objet courant dans un pointeur 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_compte}{Compte}}.
+
+\mbox{\Hypertarget{class_epargne_a5de7426af931b9dcb99ae14558bbdda9}\label{class_epargne_a5de7426af931b9dcb99ae14558bbdda9}} 
+\index{Epargne@{Epargne}!reqCompteFormate@{reqCompteFormate}}
+\index{reqCompteFormate@{reqCompteFormate}!Epargne@{Epargne}}
+\doxysubsubsection{\texorpdfstring{reqCompteFormate()}{reqCompteFormate()}}
+{\footnotesize\ttfamily std\+::string Epargne\+::req\+Compte\+Formate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Méthode virtuelle retournant l\textquotesingle{}ensemble des attributs formatés. 
+
+\begin{DoxyReturn}{Returns}
+les informations du compte epargne formatée dans une chaîne de caractères 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_compte_a0fa547193d6056cf12d75a7ac38bc2a9}{Compte}}.
+
+\mbox{\Hypertarget{class_epargne_a20a3ad800bc51521f7b7a639226240af}\label{class_epargne_a20a3ad800bc51521f7b7a639226240af}} 
+\index{Epargne@{Epargne}!validerAttributsEpargne@{validerAttributsEpargne}}
+\index{validerAttributsEpargne@{validerAttributsEpargne}!Epargne@{Epargne}}
+\doxysubsubsection{\texorpdfstring{validerAttributsEpargne()}{validerAttributsEpargne()}}
+{\footnotesize\ttfamily bool Epargne\+::valider\+Attributs\+Epargne (\begin{DoxyParamCaption}\item[{double}]{p\+\_\+solde,  }\item[{double}]{p\+\_\+taux\+Interet }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Vérifie la validité des attributs. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em p\+\_\+solde} & est un nombre décimale qui représente le solde du compte epargne \\
+\hline
+\mbox{\texttt{ in}}  & {\em p\+\_\+taux\+Interet} & est un nombre décimale qui représente le taux d\textquotesingle{}intérêt du compte epargne \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un booléen indiquant si les attributs sont valides ou non 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_epargne_8h}{Epargne.\+h}}\item 
+\mbox{\hyperlink{_epargne_8cpp}{Epargne.\+cpp}}\end{DoxyCompactItemize}

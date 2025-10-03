@@ -1,0 +1,96 @@
+\hypertarget{_cheque_testeur_8cpp}{}\doxysection{tests/\+Cheque\+Testeur.cpp File Reference}
+\label{_cheque_testeur_8cpp}\index{tests/ChequeTesteur.cpp@{tests/ChequeTesteur.cpp}}
+
+
+Test unitaire de la classe Cheque.  
+
+
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$gtest/gtest.\+h$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+{\ttfamily \#include \char`\"{}Date.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Compte.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Cheque.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Contrat\+Exception.\+h\char`\"{}}\newline
+Include dependency graph for Cheque\+Testeur.\+cpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_cheque_testeur_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_un_compte_cheque}{Un\+Compte\+Cheque}}
+\begin{DoxyCompactList}\small\item\em création d\textquotesingle{}une fixture pour des tests de la classe Cheque \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_cheque_testeur_8cpp_aed4538f72b315391d40d933b04ae1b2e}{TEST}} (\mbox{\hyperlink{classbancaire_1_1_cheque}{Cheque}}, constructeur\+Parametre\+Valide)
+\begin{DoxyCompactList}\small\item\em Test du constructeur avec paramètres Cheque(unsigned p\+\_\+no\+Compte, double p\+\_\+solde, double p\+\_\+taux\+Interet, unsigned p\+\_\+nombre\+Transactions, double p\+\_\+taux\+Interet\+Minimum = 0.\+1, const std\+::string\& p\+\_\+description = \char`\"{}\+Cheque\char`\"{}) cas valide\+: constructeur\+Parametre\+Valide \+: Création d\textquotesingle{}une compte cheque valide à l\textquotesingle{}aide du constructeur par paramètres. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_cheque_testeur_8cpp_a51d11440110c82144b6a0d1fb03dfd0f}\label{_cheque_testeur_8cpp_a51d11440110c82144b6a0d1fb03dfd0f}} 
+{\bfseries TEST} (\mbox{\hyperlink{classbancaire_1_1_cheque}{Cheque}}, constructeur\+Parametre\+\_\+nbr\+Transactions\+Invalide)
+\item 
+\mbox{\Hypertarget{_cheque_testeur_8cpp_aafb31e961b891c23c2d3e08403a9847b}\label{_cheque_testeur_8cpp_aafb31e961b891c23c2d3e08403a9847b}} 
+{\bfseries TEST} (\mbox{\hyperlink{classbancaire_1_1_cheque}{Cheque}}, constructeur\+Parametre\+\_\+taux\+Interet\+Minimum\+Invalide)
+\item 
+\mbox{\Hypertarget{_cheque_testeur_8cpp_acabd5f24ad2a197a68829ce1a520797f}\label{_cheque_testeur_8cpp_acabd5f24ad2a197a68829ce1a520797f}} 
+\mbox{\hyperlink{_cheque_testeur_8cpp_acabd5f24ad2a197a68829ce1a520797f}{TEST}} (\mbox{\hyperlink{classbancaire_1_1_cheque}{Cheque}}, validation\+Attributs\+\_\+vrai)
+\begin{DoxyCompactList}\small\item\em Test de la méthode static bool valider\+Attributs\+Cheque(double p\+\_\+taux\+Interet\+Minimum, unsigned p\+\_\+nombre\+Transations) cas valide\+: Attributs\+Vrai\+: vérifier les attributs d\textquotesingle{}un objet cheque valide nbr\+Transactions\+Faux\+: vérifier le nombre de transactions du compte cheque invalide taux\+Interet\+Minimum\+Faux\+: vérifier un taux d\textquotesingle{}intérêt minimum invalide cas invalide\+: aucun d\textquotesingle{}identifié \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_cheque_testeur_8cpp_a1a4b11ceee3172bae3b882db3fc3dbc4}\label{_cheque_testeur_8cpp_a1a4b11ceee3172bae3b882db3fc3dbc4}} 
+{\bfseries TEST} (\mbox{\hyperlink{classbancaire_1_1_cheque}{Cheque}}, validation\+Nbr\+Transactions\+\_\+faux)
+\item 
+\mbox{\Hypertarget{_cheque_testeur_8cpp_a8691103e43107e02bdd8d52bb6f501aa}\label{_cheque_testeur_8cpp_a8691103e43107e02bdd8d52bb6f501aa}} 
+{\bfseries TEST} (\mbox{\hyperlink{classbancaire_1_1_cheque}{Cheque}}, validation\+Taux\+Interet\+Minimum\+\_\+faux)
+\item 
+\mbox{\Hypertarget{_cheque_testeur_8cpp_af3d6c8b0391aeb84a4d86ce1e047fddc}\label{_cheque_testeur_8cpp_af3d6c8b0391aeb84a4d86ce1e047fddc}} 
+\mbox{\hyperlink{_cheque_testeur_8cpp_af3d6c8b0391aeb84a4d86ce1e047fddc}{TEST\+\_\+F}} (\mbox{\hyperlink{class_un_compte_cheque}{Un\+Compte\+Cheque}}, req\+Nbr\+Transactions)
+\begin{DoxyCompactList}\small\item\em Test de la méthode unsigned req\+Nbr\+Transactions() const cas valide\+: req\+Nbr\+Transactions\+: test du nombre de transaction et objet cheque valide cas invalide\+: aucun d\textquotesingle{}identifié \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_cheque_testeur_8cpp_a6d75062fee2414ae2efdf84b9fb01ac8}\label{_cheque_testeur_8cpp_a6d75062fee2414ae2efdf84b9fb01ac8}} 
+\mbox{\hyperlink{_cheque_testeur_8cpp_a6d75062fee2414ae2efdf84b9fb01ac8}{TEST\+\_\+F}} (\mbox{\hyperlink{class_un_compte_cheque}{Un\+Compte\+Cheque}}, req\+Taux\+Interet\+Min)
+\begin{DoxyCompactList}\small\item\em Test de la méthode double req\+Taux\+Interet\+Minimum() const cas valide\+: req\+Taux\+Interet\+Min\+: test du taux d\textquotesingle{}intérêt minimum du compte et objet cheque valide cas invalide\+: aucun d\textquotesingle{}identifié \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_cheque_testeur_8cpp_a0e1e6f4b9a9c648eefd46fd3d237998a}\label{_cheque_testeur_8cpp_a0e1e6f4b9a9c648eefd46fd3d237998a}} 
+\mbox{\hyperlink{_cheque_testeur_8cpp_a0e1e6f4b9a9c648eefd46fd3d237998a}{TEST\+\_\+F}} (\mbox{\hyperlink{class_un_compte_cheque}{Un\+Compte\+Cheque}}, asg\+Nbr\+Transac\+Valide)
+\begin{DoxyCompactList}\small\item\em Test de la méthode void asg\+Nbr\+Transactions(unsigned p\+\_\+nombre\+Transactions) cas valide\+: asg\+Nbr\+Transac\+Valide\+: assigner un nouveau nombre de transaction $>$ 0 \&\& $<$= 40 cas invalide\+: asg\+Nbr\+Transac\+Invalide\+: assigner un nouveau nombre de transaction $<$0 $\vert$$\vert$ $>$40. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_cheque_testeur_8cpp_a18f2beb47f430c43e485d6702de34808}\label{_cheque_testeur_8cpp_a18f2beb47f430c43e485d6702de34808}} 
+{\bfseries TEST\+\_\+F} (\mbox{\hyperlink{class_un_compte_cheque}{Un\+Compte\+Cheque}}, asg\+Nbr\+Transac\+Invalide)
+\item 
+\mbox{\Hypertarget{_cheque_testeur_8cpp_a4bc0d4e38d2810e4269939ecb00fb9c8}\label{_cheque_testeur_8cpp_a4bc0d4e38d2810e4269939ecb00fb9c8}} 
+\mbox{\hyperlink{_cheque_testeur_8cpp_a4bc0d4e38d2810e4269939ecb00fb9c8}{TEST\+\_\+F}} (\mbox{\hyperlink{class_un_compte_cheque}{Un\+Compte\+Cheque}}, calcul\+Interet\+Cheque)
+\begin{DoxyCompactList}\small\item\em Test de la méthode virtual double calculer\+Interet() const cas valide\+: calcul\+Interet\+Cheque\+: retourne le produit du solde et du taux d\textquotesingle{}interet minimum, du taux d\textquotesingle{}interet du compte ou de 0.\+0 (si le solde est positif) selon le nombre de transactions dans le compte cheque cas invalide\+: aucun d\textquotesingle{}identifié \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_cheque_testeur_8cpp_a6340713730bb01da7a58a6d6b57566a5}\label{_cheque_testeur_8cpp_a6340713730bb01da7a58a6d6b57566a5}} 
+\mbox{\hyperlink{_cheque_testeur_8cpp_a6340713730bb01da7a58a6d6b57566a5}{TEST\+\_\+F}} (\mbox{\hyperlink{class_un_compte_cheque}{Un\+Compte\+Cheque}}, req\+Cheque\+Formates)
+\begin{DoxyCompactList}\small\item\em Test de la méthode virtual std\+::string req\+Compte\+Formate() const cas valide\+: req\+Cheque\+Formates\+: test des informations formatés en string et objet cheque valide cas invalide\+: aucun d\textquotesingle{}identifié \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_cheque_testeur_8cpp_ab75bc6901873cc1c5102758b18c8efba}\label{_cheque_testeur_8cpp_ab75bc6901873cc1c5102758b18c8efba}} 
+\mbox{\hyperlink{_cheque_testeur_8cpp_ab75bc6901873cc1c5102758b18c8efba}{TEST\+\_\+F}} (\mbox{\hyperlink{class_un_compte_cheque}{Un\+Compte\+Cheque}}, clone\+Pointeur\+Cheque)
+\begin{DoxyCompactList}\small\item\em Test de la méthode virtual std\+::unique\+\_\+ptr$<$\+Compte$>$ clone() const override; cas valide\+: clone\+Pointeur\+Cheque\+: test du pointeur et de la méthode clone et objet cheque valide cas invalide\+: aucun d\textquotesingle{}identifié \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Test unitaire de la classe Cheque. 
+
+\begin{DoxyAuthor}{Author}
+Judith-\/\+Aisha Dortélus 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 \textbackslash{} 3/28/2025 A tester\+: Cheque(unsigned p\+\_\+no\+Compte, double p\+\_\+solde, double p\+\_\+taux\+Interet, unsigned p\+\_\+nombre\+Transactions, double p\+\_\+taux\+Interet\+Minimum = 0.\+1, const std\+::string\& p\+\_\+description = \char`\"{}\+Cheque\char`\"{}); unsigned req\+Nbr\+Transactions() const; double req\+Taux\+Interet\+Minimum() const; void asg\+Nbr\+Transactions(unsigned p\+\_\+nombre\+Transactions); virtual double calculer\+Interet() const; virtual std\+::string req\+Compte\+Formate() const; ~\newline
+ virtual std\+::unique\+\_\+ptr$<$\+Compte$>$ clone() const override; ~\newline
+ static bool valider\+Attributs\+Cheque(double p\+\_\+taux\+Interet\+Minimum, unsigned p\+\_\+nombre\+Transations); 
+\end{DoxyVersion}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_cheque_testeur_8cpp_aed4538f72b315391d40d933b04ae1b2e}\label{_cheque_testeur_8cpp_aed4538f72b315391d40d933b04ae1b2e}} 
+\index{ChequeTesteur.cpp@{ChequeTesteur.cpp}!TEST@{TEST}}
+\index{TEST@{TEST}!ChequeTesteur.cpp@{ChequeTesteur.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}}
+{\footnotesize\ttfamily TEST (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classbancaire_1_1_cheque}{Cheque}}}]{,  }\item[{constructeur\+Parametre\+Valide}]{ }\end{DoxyParamCaption})}
+
+
+
+Test du constructeur avec paramètres Cheque(unsigned p\+\_\+no\+Compte, double p\+\_\+solde, double p\+\_\+taux\+Interet, unsigned p\+\_\+nombre\+Transactions, double p\+\_\+taux\+Interet\+Minimum = 0.\+1, const std\+::string\& p\+\_\+description = \char`\"{}\+Cheque\char`\"{}) cas valide\+: constructeur\+Parametre\+Valide \+: Création d\textquotesingle{}une compte cheque valide à l\textquotesingle{}aide du constructeur par paramètres. 
+
+cas invalides\+: nbr\+Transactions\+Invalide\+: nombre de transaction $<$ 0 $\vert$$\vert$ nombre de transaction $>$ 40 taux\+Interet\+Minimum\+Invalide \+: taux d\textquotesingle{}intérêt minimum $<$ 0.\+1 

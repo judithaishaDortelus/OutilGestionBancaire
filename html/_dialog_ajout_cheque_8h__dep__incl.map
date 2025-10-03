@@ -1,0 +1,5 @@
+<map id="TP3Gui/DialogAjoutCheque.h" name="TP3Gui/DialogAjoutCheque.h">
+<area shape="rect" id="node1" title="GUI d&#39;un programme minimaliste pour l&#39;ajout d&#39;un compte Cheque." alt="" coords="137,5,346,32"/>
+<area shape="rect" id="node2" href="$_dialog_ajout_cheque_8cpp.html" title="Implémentation de la classe DialogAjoutCheque." alt="" coords="5,80,229,107"/>
+<area shape="rect" id="node3" href="$_gestion_compte_g_u_i_8cpp.html" title="Implémentation de la classe GestionCompteGUI." alt="" coords="253,80,477,107"/>
+</map>

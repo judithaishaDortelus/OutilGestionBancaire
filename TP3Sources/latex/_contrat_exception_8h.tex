@@ -1,0 +1,91 @@
+\hypertarget{_contrat_exception_8h}{}\doxysection{Contrat\+Exception.\+h File Reference}
+\label{_contrat_exception_8h}\index{ContratException.h@{ContratException.h}}
+
+
+Hiérarchie de classe pour la gestion des erreurs par la théorie du contrat.  
+
+
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$stdexcept$>$}\newline
+Include dependency graph for Contrat\+Exception.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=208pt]{_contrat_exception_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_contrat_exception_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_contrat_exception}{Contrat\+Exception}}
+\begin{DoxyCompactList}\small\item\em Classe de base des exceptions de contrat. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_assertion_exception}{Assertion\+Exception}}
+\begin{DoxyCompactList}\small\item\em Classe pour la gestion des erreurs d\textquotesingle{}assertion. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_precondition_exception}{Precondition\+Exception}}
+\begin{DoxyCompactList}\small\item\em Classe pour la gestion des erreurs de précondition. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_postcondition_exception}{Postcondition\+Exception}}
+\begin{DoxyCompactList}\small\item\em Classe pour la gestion des erreurs de postcondition. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_invariant_exception}{Invariant\+Exception}}
+\begin{DoxyCompactList}\small\item\em Classe pour la gestion des erreurs d\textquotesingle{}invariant. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{_contrat_exception_8h_a52dddc2c198c58b53b201c313934e40c}\label{_contrat_exception_8h_a52dddc2c198c58b53b201c313934e40c}} 
+\#define {\bfseries INVARIANTS}()~      verifie\+Invariant()
+\item 
+\mbox{\Hypertarget{_contrat_exception_8h_abe6e3e0ff48f8595570e6485b506a8c4}\label{_contrat_exception_8h_abe6e3e0ff48f8595570e6485b506a8c4}} 
+\#define {\bfseries ASSERTION}(f)~      if (!(f)) throw \mbox{\hyperlink{class_assertion_exception}{Assertion\+Exception}}(\+\_\+\+\_\+\+FILE\+\_\+\+\_\+,\+\_\+\+\_\+\+LINE\+\_\+\+\_\+, \#f);
+\item 
+\mbox{\Hypertarget{_contrat_exception_8h_acb3361bd87fc697a57b7286a9998c106}\label{_contrat_exception_8h_acb3361bd87fc697a57b7286a9998c106}} 
+\#define {\bfseries PRECONDITION}(f)~      if (!(f)) throw \mbox{\hyperlink{class_precondition_exception}{Precondition\+Exception}}(\+\_\+\+\_\+\+FILE\+\_\+\+\_\+, \+\_\+\+\_\+\+LINE\+\_\+\+\_\+, \#f);
+\item 
+\mbox{\Hypertarget{_contrat_exception_8h_a438b75c0c77a1ce8d1e914f9f04ea548}\label{_contrat_exception_8h_a438b75c0c77a1ce8d1e914f9f04ea548}} 
+\#define {\bfseries POSTCONDITION}(f)~      if (!(f)) throw \mbox{\hyperlink{class_postcondition_exception}{Postcondition\+Exception}}(\+\_\+\+\_\+\+FILE\+\_\+\+\_\+, \+\_\+\+\_\+\+LINE\+\_\+\+\_\+, \#f);
+\item 
+\mbox{\Hypertarget{_contrat_exception_8h_a08f80155f47e05681c2b9bb9c5f6fffe}\label{_contrat_exception_8h_a08f80155f47e05681c2b9bb9c5f6fffe}} 
+\#define {\bfseries INVARIANT}(f)~      if (!(f)) throw \mbox{\hyperlink{class_invariant_exception}{Invariant\+Exception}}(\+\_\+\+\_\+\+FILE\+\_\+\+\_\+,\+\_\+\+\_\+\+LINE\+\_\+\+\_\+, \#f);
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Hiérarchie de classe pour la gestion des erreurs par la théorie du contrat. 
+
+contenant la déclaration de la classe \mbox{\hyperlink{class_contrat_exception}{Contrat\+Exception}} et de ses héritiers
+
+Ces classes constituent la hiérarchie pour la gestion de la théorie du contrat. Elle maintient les données nécessaires à la sauvegarde des renseignements de l\textquotesingle{}erreur. Cette classe et sa hiérarchie sont intéressantes lors de l\textquotesingle{}utilisation des exceptions.
+
+En release, définir la constante NDEBUG pour désactiver les Macros
+
+
+\begin{DoxyPre}
+Classes:
+std::logic\_error        Classe de base des exceptions logiques
+\mbox{\hyperlink{class_contrat_exception}{ContratException}}:       Classe de base des exceptions de contrat.
+\mbox{\hyperlink{class_assertion_exception}{AssertionException}}:     Classe de gestion des erreurs d'assertion.
+\mbox{\hyperlink{class_precondition_exception}{PreconditionException}}:  Classe de gestion des erreurs de précondition.
+\mbox{\hyperlink{class_postcondition_exception}{PostconditionException}}: Classe de gestion des erreurs de postcondition.
+\mbox{\hyperlink{class_invariant_exception}{InvariantException}}:     Classe de gestion des erreurs d'invariant.
+
+Attributs:
+     std::string  m\_expression: Le test logique qui a échoué.
+     std::string  m\_fichier:    Le nom du fichier.
+     unsigned int m\_ligne:      Le numéro de ligne
+\end{DoxyPre}
+
+
+\begin{DoxyNote}{Note}
+Cette hiérarchie de classe est inspiré du livre de Horstmann\+: Mastering object oriented design in C++, 1995, Ref\+:12-\/2007257. Voir la classe Chi\+Error fournie avec le livre.
+\end{DoxyNote}
+\begin{DoxyAuthor}{Author}
+YR, TE 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+V3.\+0 révisée balises Doxygen C++ normes 
+\end{DoxyVersion}

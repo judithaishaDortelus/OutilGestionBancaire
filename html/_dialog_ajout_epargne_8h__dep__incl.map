@@ -1,0 +1,5 @@
+<map id="TP3Gui/DialogAjoutEpargne.h" name="TP3Gui/DialogAjoutEpargne.h">
+<area shape="rect" id="node1" title="GUI d&#39;un programme minimaliste pour l&#39;ajout d&#39;un compte Epargne." alt="" coords="138,5,351,32"/>
+<area shape="rect" id="node2" href="$_dialog_ajout_epargne_8cpp.html" title="Implémentation de la classe DialogAjoutEpargne." alt="" coords="5,80,233,107"/>
+<area shape="rect" id="node3" href="$_gestion_compte_g_u_i_8cpp.html" title="Implémentation de la classe GestionCompteGUI." alt="" coords="258,80,482,107"/>
+</map>

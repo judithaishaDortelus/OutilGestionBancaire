@@ -1,0 +1,54 @@
+\hypertarget{_compte_exception_8h}{}\doxysection{TP3\+Sources/\+Compte\+Exception.h File Reference}
+\label{_compte_exception_8h}\index{TP3Sources/CompteException.h@{TP3Sources/CompteException.h}}
+
+
+Hiérarchie de classe pour la gestion des erreurs par lors de l\textquotesingle{}exécution du programme.  
+
+
+{\ttfamily \#include $<$stdexcept$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+Include dependency graph for Compte\+Exception.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=251pt]{_compte_exception_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_compte_exception_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_compte_exception}{Compte\+Exception}}
+\begin{DoxyCompactList}\small\item\em Classe de base des exceptions du compte. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_compte_deja_present_exception}{Compte\+Deja\+Present\+Exception}}
+\begin{DoxyCompactList}\small\item\em Classe pour la gestion d\textquotesingle{}erreur lors de l\textquotesingle{}ajout d\textquotesingle{}un compte doublon. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_compte_absent_exception}{Compte\+Absent\+Exception}}
+\begin{DoxyCompactList}\small\item\em Classe pour la gestion d\textquotesingle{}erreur lors de l\textquotesingle{}effacement d\textquotesingle{}un compte absent. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Hiérarchie de classe pour la gestion des erreurs par lors de l\textquotesingle{}exécution du programme. 
+
+contenant la déclaration de la classe \mbox{\hyperlink{class_compte_exception}{Compte\+Exception}} et de ses héritiers
+
+Ces classes constituent la hiérarchie pour la gestion des exceptions liées aux comptes. Elle maintient les données nécessaires afin de signaler les erreurs se produisant lors de l\textquotesingle{}exécution du programme.
+
+Classes\+: std\+::runtime\+\_\+error Classe de base des exceptions logiques. \mbox{\hyperlink{class_compte_exception}{Compte\+Exception}} Classe de base des exceptions de contrat. \mbox{\hyperlink{class_compte_deja_present_exception}{Compte\+Deja\+Present\+Exception}} Classe de gestion des erreurs d\textquotesingle{}assertion. \mbox{\hyperlink{class_compte_absent_exception}{Compte\+Absent\+Exception}} Classe de gestion des erreurs de précondition.
+
+Attributs\+: ~\newline
+ std\+::string m\+\_\+raison Il a une erreur lors de l\textquotesingle{}exécution du programme.
+
+\begin{DoxyAuthor}{Author}
+Judith-\/\+Aisha \& Michaël Denis 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 \textbackslash{} 4/14/2025 
+\end{DoxyVersion}

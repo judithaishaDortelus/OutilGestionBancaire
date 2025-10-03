@@ -1,0 +1,6 @@
+<map id="CompteException" name="CompteException">
+<area shape="rect" id="node1" title="Classe de base des exceptions du compte." alt="" coords="140,80,277,107"/>
+<area shape="rect" id="node3" href="$class_compte_absent_exception.html" title="Classe pour la gestion d&#39;erreur lors de l&#39;effacement d&#39;un compte absent." alt="" coords="5,155,188,181"/>
+<area shape="rect" id="node4" href="$class_compte_deja_present_exception.html" title="Classe pour la gestion d&#39;erreur lors de l&#39;ajout d&#39;un compte doublon." alt="" coords="213,155,429,181"/>
+<area shape="rect" id="node2" title=" " alt="" coords="139,5,278,32"/>
+</map>

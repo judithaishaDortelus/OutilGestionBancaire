@@ -1,0 +1,96 @@
+\hypertarget{class_dialog_supprimer}{}\doxysection{Dialog\+Supprimer Class Reference}
+\label{class_dialog_supprimer}\index{DialogSupprimer@{DialogSupprimer}}
+
+
+Classe GUI permettant la suppression d\textquotesingle{}un compte bancaire.  
+
+
+
+
+{\ttfamily \#include $<$Dialog\+Supprimer.\+h$>$}
+
+
+
+Inheritance diagram for Dialog\+Supprimer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=178pt]{class_dialog_supprimer__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Dialog\+Supprimer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=178pt]{class_dialog_supprimer__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_dialog_supprimer_a048ca8c3f8085ab96c8eb6ab75bfa4c6}\label{class_dialog_supprimer_a048ca8c3f8085ab96c8eb6ab75bfa4c6}} 
+void {\bfseries compte\+Supprime} (unsigned int numero\+Compte)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_dialog_supprimer_ace458e2e08ab2d88757c4f447f5a329b}{Dialog\+Supprimer}} ()
+\begin{DoxyCompactList}\small\item\em Constructeur par défaut Construit une fenêtre de dialogue pour la suppression d\textquotesingle{}un compte en utilisant le framework Qt. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_dialog_supprimer_ab71e637141ffd70b8614688e071c6285}\label{class_dialog_supprimer_ab71e637141ffd70b8614688e071c6285}} 
+virtual \mbox{\hyperlink{class_dialog_supprimer_ab71e637141ffd70b8614688e071c6285}{$\sim$\+Dialog\+Supprimer}} ()
+\begin{DoxyCompactList}\small\item\em Destructeur de la classe \mbox{\hyperlink{class_dialog_supprimer}{Dialog\+Supprimer}}. \end{DoxyCompactList}\item 
+unsigned \mbox{\hyperlink{class_dialog_supprimer_ad8465931de75a6340fa3e4428d5c07d1}{req\+No\+Compte}} () const
+\begin{DoxyCompactList}\small\item\em Méthode accesseur retournant le numéro de compte entré \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classe GUI permettant la suppression d\textquotesingle{}un compte bancaire. 
+
+\begin{DoxyVerb}         Cette classe fournit une interface utilisateur, construite avec Qt, pour saisir
+         le numéro d'un compte à supprimer. Elle offre un slot pour valider l'entrée
+         et fermer la boîte de dialogue. La suppression effective du compte est gérée
+         par la fenêtre principale après la fermeture du dialogue.
+\end{DoxyVerb}
+ \textbackslash{}slot\+Supprimer Slot déclenché pour valider l\textquotesingle{}entrée et fermer la boîte de dialogue. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_dialog_supprimer_ace458e2e08ab2d88757c4f447f5a329b}\label{class_dialog_supprimer_ace458e2e08ab2d88757c4f447f5a329b}} 
+\index{DialogSupprimer@{DialogSupprimer}!DialogSupprimer@{DialogSupprimer}}
+\index{DialogSupprimer@{DialogSupprimer}!DialogSupprimer@{DialogSupprimer}}
+\doxysubsubsection{\texorpdfstring{DialogSupprimer()}{DialogSupprimer()}}
+{\footnotesize\ttfamily Dialog\+Supprimer\+::\+Dialog\+Supprimer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructeur par défaut Construit une fenêtre de dialogue pour la suppression d\textquotesingle{}un compte en utilisant le framework Qt. 
+
+\begin{DoxyPostcond}{Postcondition}
+L\textquotesingle{}interface utilisateur est initialisée et prête à recevoir un numéro de compte. 
+\end{DoxyPostcond}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_dialog_supprimer_ad8465931de75a6340fa3e4428d5c07d1}\label{class_dialog_supprimer_ad8465931de75a6340fa3e4428d5c07d1}} 
+\index{DialogSupprimer@{DialogSupprimer}!reqNoCompte@{reqNoCompte}}
+\index{reqNoCompte@{reqNoCompte}!DialogSupprimer@{DialogSupprimer}}
+\doxysubsubsection{\texorpdfstring{reqNoCompte()}{reqNoCompte()}}
+{\footnotesize\ttfamily unsigned Dialog\+Supprimer\+::req\+No\+Compte (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Méthode accesseur retournant le numéro de compte entré 
+
+\begin{DoxyReturn}{Returns}
+Un entier positif représentant le numéro de compte à supprimer 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+TP3\+Gui/\mbox{\hyperlink{_dialog_supprimer_8h}{Dialog\+Supprimer.\+h}}\item 
+TP3\+Gui/\mbox{\hyperlink{_dialog_supprimer_8cpp}{Dialog\+Supprimer.\+cpp}}\item 
+TP3\+Gui/moc\+\_\+\+Dialog\+Supprimer.\+cpp\end{DoxyCompactItemize}

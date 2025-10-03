@@ -1,0 +1,6 @@
+<map id="bancaire::Compte" name="bancaire::Compte">
+<area shape="rect" id="node1" title="Classe sert au maintien et à la manipulation des comptes." alt="" coords="127,5,265,32"/>
+<area shape="rect" id="node2" href="$class_compte_test.html" title="Classe de test permettant de tester la classe abstraite Compte." alt="" coords="5,80,104,107"/>
+<area shape="rect" id="node3" href="$classbancaire_1_1_cheque.html" title="Classe sert au maintien et à la manipulation des comptes cheque." alt="" coords="129,80,263,107"/>
+<area shape="rect" id="node4" href="$classbancaire_1_1_epargne.html" title="Classe sert au maintien et à la manipulation des comptes epargne." alt="" coords="288,80,427,107"/>
+</map>

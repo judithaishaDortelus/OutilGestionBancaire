@@ -1,0 +1,5 @@
+<map id="TP3Gui/GestionCompteGUI.h" name="TP3Gui/GestionCompteGUI.h">
+<area shape="rect" id="node1" title="GUI d&#39;un programme minimaliste pour la gestion de compte du client." alt="" coords="114,5,323,32"/>
+<area shape="rect" id="node2" href="$_gestion_compte_g_u_i_8cpp.html" title="Implémentation de la classe GestionCompteGUI." alt="" coords="5,80,229,107"/>
+<area shape="rect" id="node3" href="$main_8cpp.html" title="Programme minimaliste utilisant la classe Client avec différents comptes pour intégré au framework QT..." alt="" coords="254,80,386,107"/>
+</map>

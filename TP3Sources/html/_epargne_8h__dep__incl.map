@@ -1,0 +1,8 @@
+<map id="Epargne.h" name="Epargne.h">
+<area shape="rect" id="node1" title="Fichier qui contient l&#39;interface de la classe Epargne qui sert au maintien et à la manipulation des c..." alt="" coords="193,5,280,32"/>
+<area shape="rect" id="node2" href="$_client_8h.html" title="Fichier qui contient l&#39;interface de la classe Client qui sert à la gestion des comptes du client." alt="" coords="89,80,161,107"/>
+<area shape="rect" id="node5" href="$_epargne_8cpp.html" title="Implémentation de la classe Epargne." alt="" coords="185,80,288,107"/>
+<area shape="rect" id="node6" href="$_epargne_testeur_8cpp.html" title="Test unitaire de la classe Epargne." alt="" coords="313,80,497,107"/>
+<area shape="rect" id="node3" href="$_client_8cpp.html" title="Implémentation de la classe Client." alt="" coords="5,155,92,181"/>
+<area shape="rect" id="node4" href="$_client_testeur_8cpp.html" title="Test unitaire de la classe Client." alt="" coords="116,155,285,181"/>
+</map>

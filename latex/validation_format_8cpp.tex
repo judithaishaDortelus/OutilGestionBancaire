@@ -1,0 +1,169 @@
+\hypertarget{validation_format_8cpp}{}\doxysection{TP3\+Sources/validation\+Format.cpp File Reference}
+\label{validation_format_8cpp}\index{TP3Sources/validationFormat.cpp@{TP3Sources/validationFormat.cpp}}
+
+
+Implémentation des fonctions de validation\+Format.  
+
+
+{\ttfamily \#include \char`\"{}validation\+Format.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+{\ttfamily \#include $<$cctype$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include \char`\"{}Date.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Compte.\+h\char`\"{}}\newline
+Include dependency graph for validation\+Format.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{validation_format_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{validation_format_8cpp_af4239cbf05ba595fe600c2f546ce2ad0}{util\+::valider\+Lettre\+Accent}} (char c)
+\begin{DoxyCompactList}\small\item\em valide si le caractère contient un accent ou non \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{validation_format_8cpp_ab3d93e73408df98688844f00a8cdce58}{util\+::valider\+Format\+Nom}} (const std\+::string \&p\+\_\+nom)
+\begin{DoxyCompactList}\small\item\em valide le format d\textquotesingle{}un nom \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{validation_format_8cpp_a73284f57e8009fb7059654fb381d6642}{util\+::valider\+Jour\+Mois\+Annee}} (int jour, int mois, int annee)
+\begin{DoxyCompactList}\small\item\em valide le jour, mois et l\textquotesingle{}année \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{validation_format_8cpp_a681971ddc36fc391a5cd0646bc5ba3f8}{util\+::valider\+Format\+Date}} (const std\+::string \&p\+\_\+ligne, int \&p\+\_\+jour, int \&p\+\_\+mois, int \&p\+\_\+annee)
+\begin{DoxyCompactList}\small\item\em Valide le format d\textquotesingle{}une date reçu en entrée. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{validation_format_8cpp_a29d923130070894f0812166f22850c5a}{util\+::valider\+Format\+Fichier}} (std\+::istream \&p\+\_\+is)
+\begin{DoxyCompactList}\small\item\em valide le format d\textquotesingle{}un fichier de données texte \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{validation_format_8cpp_aa5d3847fbf051a45af8bf3a4d8700b83}{util\+::valider\+Nombre}} (std\+::string \&p\+\_\+nombre)
+\begin{DoxyCompactList}\small\item\em valide le format d\textquotesingle{}un nombre \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Implémentation des fonctions de validation\+Format. 
+
+\begin{DoxyAuthor}{Author}
+Judith-\/\+Aisha Dortelus 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+2.\+0 \textbackslash{} 4/1/2025 
+\end{DoxyVersion}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{validation_format_8cpp_a681971ddc36fc391a5cd0646bc5ba3f8}\label{validation_format_8cpp_a681971ddc36fc391a5cd0646bc5ba3f8}} 
+\index{validationFormat.cpp@{validationFormat.cpp}!validerFormatDate@{validerFormatDate}}
+\index{validerFormatDate@{validerFormatDate}!validationFormat.cpp@{validationFormat.cpp}}
+\doxysubsubsection{\texorpdfstring{validerFormatDate()}{validerFormatDate()}}
+{\footnotesize\ttfamily bool util\+::valider\+Format\+Date (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{p\+\_\+ligne,  }\item[{int \&}]{p\+\_\+jour,  }\item[{int \&}]{p\+\_\+mois,  }\item[{int \&}]{p\+\_\+annee }\end{DoxyParamCaption})}
+
+
+
+Valide le format d\textquotesingle{}une date reçu en entrée. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em p\+\_\+ligne} & une chaîne de caractères représentant un flux d\textquotesingle{}entrée \\
+\hline
+\mbox{\texttt{ in}}  & {\em p\+\_\+jour} & un entier représentant le jour de la date \\
+\hline
+\mbox{\texttt{ in}}  & {\em p\+\_\+mois} & un entier représentant le mois de la date \\
+\hline
+\mbox{\texttt{ in}}  & {\em p\+\_\+annee} & un entier représentant l\textquotesingle{}année de la date \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un booléen indiquant si la date est valide ou non 
+\end{DoxyReturn}
+\mbox{\Hypertarget{validation_format_8cpp_a29d923130070894f0812166f22850c5a}\label{validation_format_8cpp_a29d923130070894f0812166f22850c5a}} 
+\index{validationFormat.cpp@{validationFormat.cpp}!validerFormatFichier@{validerFormatFichier}}
+\index{validerFormatFichier@{validerFormatFichier}!validationFormat.cpp@{validationFormat.cpp}}
+\doxysubsubsection{\texorpdfstring{validerFormatFichier()}{validerFormatFichier()}}
+{\footnotesize\ttfamily bool util\+::valider\+Format\+Fichier (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{p\+\_\+is }\end{DoxyParamCaption})}
+
+
+
+valide le format d\textquotesingle{}un fichier de données texte 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em p\+\_\+is} & une chaîne de caractère repésentant un flux d\textquotesingle{}entrée \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un booléen indiquant si le format des données dans le fichier sont valides ou non 
+\end{DoxyReturn}
+\mbox{\Hypertarget{validation_format_8cpp_ab3d93e73408df98688844f00a8cdce58}\label{validation_format_8cpp_ab3d93e73408df98688844f00a8cdce58}} 
+\index{validationFormat.cpp@{validationFormat.cpp}!validerFormatNom@{validerFormatNom}}
+\index{validerFormatNom@{validerFormatNom}!validationFormat.cpp@{validationFormat.cpp}}
+\doxysubsubsection{\texorpdfstring{validerFormatNom()}{validerFormatNom()}}
+{\footnotesize\ttfamily bool util\+::valider\+Format\+Nom (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{p\+\_\+nom }\end{DoxyParamCaption})}
+
+
+
+valide le format d\textquotesingle{}un nom 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em p\+\_\+nom} & une chaîne de caractère repésentant un nom \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un booléen indiquant si le nom contient des caractère spéciaux ou chiffres ou non 
+\end{DoxyReturn}
+\mbox{\Hypertarget{validation_format_8cpp_a73284f57e8009fb7059654fb381d6642}\label{validation_format_8cpp_a73284f57e8009fb7059654fb381d6642}} 
+\index{validationFormat.cpp@{validationFormat.cpp}!validerJourMoisAnnee@{validerJourMoisAnnee}}
+\index{validerJourMoisAnnee@{validerJourMoisAnnee}!validationFormat.cpp@{validationFormat.cpp}}
+\doxysubsubsection{\texorpdfstring{validerJourMoisAnnee()}{validerJourMoisAnnee()}}
+{\footnotesize\ttfamily bool util\+::valider\+Jour\+Mois\+Annee (\begin{DoxyParamCaption}\item[{int}]{jour,  }\item[{int}]{mois,  }\item[{int}]{annee }\end{DoxyParamCaption})}
+
+
+
+valide le jour, mois et l\textquotesingle{}année 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em jour} & un entier représentant le jour \\
+\hline
+\mbox{\texttt{ in}}  & {\em mois} & un entier représentant le mois \\
+\hline
+\mbox{\texttt{ in}}  & {\em annee} & un entier représentant le annee \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un booléen indiquant si les paramètres représentent des données valides 
+\end{DoxyReturn}
+\mbox{\Hypertarget{validation_format_8cpp_af4239cbf05ba595fe600c2f546ce2ad0}\label{validation_format_8cpp_af4239cbf05ba595fe600c2f546ce2ad0}} 
+\index{validationFormat.cpp@{validationFormat.cpp}!validerLettreAccent@{validerLettreAccent}}
+\index{validerLettreAccent@{validerLettreAccent}!validationFormat.cpp@{validationFormat.cpp}}
+\doxysubsubsection{\texorpdfstring{validerLettreAccent()}{validerLettreAccent()}}
+{\footnotesize\ttfamily bool util\+::valider\+Lettre\+Accent (\begin{DoxyParamCaption}\item[{char}]{c }\end{DoxyParamCaption})}
+
+
+
+valide si le caractère contient un accent ou non 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em c} & un caractère représentant une lettre à valider dans une chaîne de caractères \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un booléen indiquant si le caractère est un accent ou non 
+\end{DoxyReturn}
+\mbox{\Hypertarget{validation_format_8cpp_aa5d3847fbf051a45af8bf3a4d8700b83}\label{validation_format_8cpp_aa5d3847fbf051a45af8bf3a4d8700b83}} 
+\index{validationFormat.cpp@{validationFormat.cpp}!validerNombre@{validerNombre}}
+\index{validerNombre@{validerNombre}!validationFormat.cpp@{validationFormat.cpp}}
+\doxysubsubsection{\texorpdfstring{validerNombre()}{validerNombre()}}
+{\footnotesize\ttfamily bool util\+::valider\+Nombre (\begin{DoxyParamCaption}\item[{std\+::string \&}]{p\+\_\+nombre }\end{DoxyParamCaption})}
+
+
+
+valide le format d\textquotesingle{}un nombre 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em p\+\_\+nombre} & une chaîne de caractère repésentant un nombre \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un booléen indiquant si la chaîne de caractère p\+\_\+nombre est constitué de chiffres valides ou non 
+\end{DoxyReturn}

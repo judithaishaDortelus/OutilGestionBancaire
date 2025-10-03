@@ -1,0 +1,10 @@
+<map id="TP3Sources/Client.h" name="TP3Sources/Client.h">
+<area shape="rect" id="node1" title="Fichier qui contient l&#39;interface de la classe Client qui sert à la gestion des comptes du client." alt="" coords="583,5,734,32"/>
+<area shape="rect" id="node2" href="$_gestion_compte_g_u_i_8h.html" title="GUI d&#39;un programme minimaliste pour la gestion de compte du client." alt="" coords="114,87,323,114"/>
+<area shape="rect" id="node5" href="$_utilisation_8cpp.html" title="Programme minimaliste utilisant la classe Client avec différents comptes." alt="" coords="348,87,548,114"/>
+<area shape="rect" id="node6" href="$_utilisation_t_p3_8cpp.html" title="Programme minimaliste utilisant la classe Client avec différents comptes." alt="" coords="572,80,745,121"/>
+<area shape="rect" id="node7" href="$_client_8cpp.html" title="Implémentation de la classe Client." alt="" coords="770,87,937,114"/>
+<area shape="rect" id="node8" href="$_client_testeur_8cpp.html" title="Test unitaire de la classe Client." alt="" coords="961,87,1209,114"/>
+<area shape="rect" id="node3" href="$_gestion_compte_g_u_i_8cpp.html" title="Implémentation de la classe GestionCompteGUI." alt="" coords="5,169,229,196"/>
+<area shape="rect" id="node4" href="$main_8cpp.html" title="Programme minimaliste utilisant la classe Client avec différents comptes pour intégré au framework QT..." alt="" coords="254,169,386,196"/>
+</map>

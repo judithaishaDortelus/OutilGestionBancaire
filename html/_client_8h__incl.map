@@ -1,0 +1,10 @@
+<map id="TP3Sources/Client.h" name="TP3Sources/Client.h">
+<area shape="rect" id="node1" title="Fichier qui contient l&#39;interface de la classe Client qui sert à la gestion des comptes du client." alt="" coords="199,5,349,32"/>
+<area shape="rect" id="node2" title=" " alt="" coords="219,304,278,331"/>
+<area shape="rect" id="node3" title=" " alt="" coords="31,229,109,256"/>
+<area shape="rect" id="node4" title=" " alt="" coords="469,80,532,107"/>
+<area shape="rect" id="node5" href="$_date_8h.html" title="Fichier qui contient l&#39;interface de la classe Date qui sert au maintien et à la manipulation des date..." alt="" coords="216,229,281,256"/>
+<area shape="rect" id="node6" href="$_compte_8h.html" title="Fichier qui contient l&#39;interface de la classe Compte qui sert au maintien et à la manipulation des co..." alt="" coords="55,155,141,181"/>
+<area shape="rect" id="node7" href="$_epargne_8h.html" title="Fichier qui contient l&#39;interface de la classe Epargne qui sert au maintien et à la manipulation des c..." alt="" coords="55,80,141,107"/>
+<area shape="rect" id="node8" href="$_cheque_8h.html" title="Fichier qui contient l&#39;interface de la classe Cheque qui sert au maintien et à la manipulation des co..." alt="" coords="233,80,315,107"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="UnCompte" name="UnCompte">
+<area shape="rect" id="node1" title="création d&#39;une fixture pour des tests de la classe Compte" alt="" coords="55,171,146,197"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,81,153,108"/>
+<area shape="rect" id="node3" href="$class_compte_test.html" title="Classe de test permettant de tester la classe abstraite Compte." alt="" coords="178,81,277,108"/>
+<area shape="rect" id="node4" href="$classbancaire_1_1_compte.html" title="Classe sert au maintien et à la manipulation des comptes." alt="" coords="159,5,296,32"/>
+</map>
