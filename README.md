@@ -45,7 +45,4 @@ Outil de gestion bancaire développé en C++ avec interface Qt, mettant en oeuvr
 <img width="858" height="680" alt="03 1" src="https://github.com/user-attachments/assets/9aea1d51-99c6-43d5-91d7-0bcd94c5e88d" />
 <img width="861" height="679" alt="03 2" src="https://github.com/user-attachments/assets/152c006c-6fbe-4066-9675-f702129d53ca" />
 
-
-
-
-
+<!--Ce projet démontre une application rigoureuse des principes de qualité logicielle, notamment par l'implémentation de contrats d'exception, la manipulation de données dynamiques et une couverture complète de tests unitaires, reflétant les bonnes pratiques de l'industrie pour le développement d'applications critiques.-->>
